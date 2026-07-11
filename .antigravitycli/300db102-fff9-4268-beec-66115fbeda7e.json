@@ -1,1 +1,14 @@
-C:/Users/bigcr/.gemini/config/projects/300db102-fff9-4268-beec-66115fbeda7e.json
+{
+  "id": "300db102-fff9-4268-beec-66115fbeda7e",
+  "name": "C:\\Users\\bigcr\\scratch\\marimo_research",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file://C:/Users/bigcr/scratch/marimo_research",
+          "allowWrite": true
+        }
+      }
+    ]
+  }
+}
