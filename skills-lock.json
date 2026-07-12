@@ -20,6 +20,18 @@
       "source": "marimo-team/skills",
       "sourceType": "github",
       "computedHash": "54638fc2c6326de69b13fc50231bb6ca41cd5594c8014f2ade6532a914a1ff2b"
+    },
+    "marimo-pair": {
+      "source": "marimo-team/marimo-pair",
+      "sourceType": "github",
+      "skillPath": "skills/marimo-pair/SKILL.md",
+      "computedHash": "87e8a947faba33f1b4e259d7cca4c4a66cb14cb651df58c28a2c854a0f98f044"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "computedHash": "7e3c9cd74e9e2b4828527a857170e86310f2dab5ea8030a9043df2c7e6c88857"
     }
   }
 }
