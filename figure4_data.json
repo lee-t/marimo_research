@@ -1,0 +1,3103 @@
+{
+  "neighbor_rows": [
+    {
+      "key": "2^14:6716",
+      "feature_id": "F6716",
+      "feature_index": 6716,
+      "sae_dim": "2^14",
+      "cosine": 1.0,
+      "category": "Catalytic function",
+      "label": "Serine hydrolase nucleophile elbow",
+      "summary": "Catalytic nucleophile serine of serine hydrolases, specifically the conserved \u201cnucleophile elbow\u201d pentapeptide (e.g., GXSXG/GHSxG/GDSL) at a \u03b2\u2192\u03b1 junction in \u03b1/\u03b2\u2011hydrolase\u2013like folds, across esterases/lipases/thioesterases and related serine proteases/transferases; the feature recognizes this structural/sequence motif even in inactive esterase\u2011like homologs.",
+      "description": "Summary: Catalytic nucleophile serine of serine hydrolases, specifically the conserved \u201cnucleophile elbow\u201d pentapeptide (e.g., GXSXG/GHSxG/GDSL) at a \u03b2\u2192\u03b1 junction in \u03b1/\u03b2\u2011hydrolase\u2013like folds, across esterases/lipases/thioesterases and related serine proteases/transferases; the feature recognizes this structural/sequence motif even in inactive esterase\u2011like homologs.\nActivation pattern: Predominantly residue-level peaks centered on a single serine in a short coil at the end of a \u03b2\u2011strand entering an \u03b1\u2011helix (\u03b2\u2192\u03b1 turn); occasional weak shoulders on immediately adjacent small residues or nearby loop positions; other catalytic\u2011triad residues (Asp/His) are typically not activated. Most proteins show 1\u20134 peaks, with multi\u2011modular assembly\u2011line enzymes showing one per TE/catalytic module.\nExemplars: - Siderophore esterases/trilactone hydrolases (IroE/IroD family): peak on the nucleophilic Ser at the \u03b2\u2192\u03b1 junction.\n- BioH-like pimeloyl\u2011ACP methyl ester esterases: sharp peak on the annotated catalytic Ser; Asp/His of the triad remain silent.\n- Mammalian BPHL/carboxylesterase-like hydrolases: dominant peak on the catalytic Ser with minor signal on an adjacent substrate\u2011binding residue.\n- NRPS/PKS thioesterase domains: activation on the Ser within the GHSxG motif; multiple peaks in multi\u2011module systems.\n- Cholinesterases and carboxylesterases: activation on the catalytic Ser in the GXSXG nucleophile elbow.\n- Serine carboxypeptidases and dipeptidyl peptidases (\u03b1/\u03b2\u2011hydrolase catalytic domains): peak on the active\u2011site Ser.\n- Mycobacterial Ag85 mycolyltransferases (SGNH/GDSL hydrolase\u2011like): activation on the catalytic Ser of the SGNH/GDSL motif.\n- Inactive esterase\u2011like/pseudoenzymes: residual activation on the conserved nucleophile\u2011elbow serine despite loss of catalytic activity.",
+      "is_anchor": true,
+      "x": 7.534662246704102,
+      "y": 8.836442947387695
+    },
+    {
+      "key": "2^16:23988",
+      "feature_id": "F23988",
+      "feature_index": 23988,
+      "sae_dim": "2^16",
+      "cosine": 0.8702893853187561,
+      "category": "2^16 feature",
+      "label": "Feature F23988 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.151970863342285,
+      "y": 9.254870414733887
+    },
+    {
+      "key": "2^13:4873",
+      "feature_id": "F4873",
+      "feature_index": 4873,
+      "sae_dim": "2^13",
+      "cosine": 0.32104602456092834,
+      "category": "2^13 feature",
+      "label": "Feature F4873 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.627392768859863,
+      "y": 9.362557411193848
+    },
+    {
+      "key": "2^13:2859",
+      "feature_id": "F2859",
+      "feature_index": 2859,
+      "sae_dim": "2^13",
+      "cosine": 0.3159549832344055,
+      "category": "2^13 feature",
+      "label": "Feature F2859 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.671905517578125,
+      "y": 10.065258026123047
+    },
+    {
+      "key": "2^16:2579",
+      "feature_id": "F2579",
+      "feature_index": 2579,
+      "sae_dim": "2^16",
+      "cosine": 0.29815158247947693,
+      "category": "2^16 feature",
+      "label": "Feature F2579 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.700020790100098,
+      "y": 8.165972709655762
+    },
+    {
+      "key": "2^13:4672",
+      "feature_id": "F4672",
+      "feature_index": 4672,
+      "sae_dim": "2^13",
+      "cosine": 0.2813575863838196,
+      "category": "2^13 feature",
+      "label": "Feature F4672 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.415410995483398,
+      "y": 8.179630279541016
+    },
+    {
+      "key": "2^16:62277",
+      "feature_id": "F62277",
+      "feature_index": 62277,
+      "sae_dim": "2^16",
+      "cosine": 0.27334266901016235,
+      "category": "2^16 feature",
+      "label": "Feature F62277 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.42242431640625,
+      "y": 10.5212984085083
+    },
+    {
+      "key": "2^16:45714",
+      "feature_id": "F45714",
+      "feature_index": 45714,
+      "sae_dim": "2^16",
+      "cosine": 0.26676949858665466,
+      "category": "2^16 feature",
+      "label": "Feature F45714 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.919988632202148,
+      "y": 7.666079998016357
+    },
+    {
+      "key": "2^16:54983",
+      "feature_id": "F54983",
+      "feature_index": 54983,
+      "sae_dim": "2^16",
+      "cosine": 0.2542729377746582,
+      "category": "2^16 feature",
+      "label": "Feature F54983 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.021949291229248,
+      "y": 10.216113090515137
+    },
+    {
+      "key": "2^16:37787",
+      "feature_id": "F37787",
+      "feature_index": 37787,
+      "sae_dim": "2^16",
+      "cosine": 0.22268958389759064,
+      "category": "2^16 feature",
+      "label": "Feature F37787 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.437522888183594,
+      "y": 8.360664367675781
+    },
+    {
+      "key": "2^16:49490",
+      "feature_id": "F49490",
+      "feature_index": 49490,
+      "sae_dim": "2^16",
+      "cosine": 0.2175927311182022,
+      "category": "2^16 feature",
+      "label": "Feature F49490 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.227235317230225,
+      "y": 8.271098136901855
+    },
+    {
+      "key": "2^16:19492",
+      "feature_id": "F19492",
+      "feature_index": 19492,
+      "sae_dim": "2^16",
+      "cosine": 0.2061864733695984,
+      "category": "2^16 feature",
+      "label": "Feature F19492 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.440422058105469,
+      "y": 7.710153579711914
+    },
+    {
+      "key": "2^16:15216",
+      "feature_id": "F15216",
+      "feature_index": 15216,
+      "sae_dim": "2^16",
+      "cosine": 0.2044297456741333,
+      "category": "2^16 feature",
+      "label": "Feature F15216 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.018709182739258,
+      "y": 8.758992195129395
+    },
+    {
+      "key": "2^14:14793",
+      "feature_id": "F14793",
+      "feature_index": 14793,
+      "sae_dim": "2^14",
+      "cosine": 0.19701096415519714,
+      "category": "Post-translational modification",
+      "label": "Secretory phosphoserine hotspots",
+      "summary": "The feature marks specific phosphoserine sites in the N-terminal mature region of secreted enamel matrix and related secreted proteins, consistent with FAM20C-type secretory phosphorylation hotspots; signals can also occur within structured domains (e.g., beta strands of RRMs).",
+      "description": "Summary: The feature marks specific phosphoserine sites in the N-terminal mature region of secreted enamel matrix and related secreted proteins, consistent with FAM20C-type secretory phosphorylation hotspots; signals can also occur within structured domains (e.g., beta strands of RRMs).\nActivation pattern: Predominantly residue-level peaks on Ser, often at known or predicted secretory-pathway phosphoserine sites located shortly after the signal peptide cleavage site of secreted proteins. Within globular domains, activations can localize to beta strands and be sparse on helices or disordered tails. The number of peaks per protein is typically small (one to a few), with the strongest peak flanked by lower-activation residues in the immediate sequence neighborhood.\nExemplars: Enamel matrix proteins (amelogenin, enamelin, ameloblastin, odontogenic ameloblast-associated protein): N-terminal phosphoserine sites just downstream of the signal peptide; Follicular dendritic cell secreted peptide: clustered Ser activations in the mature N-terminal region; Poly(A)-binding proteins (RRM RNA-binding proteins): discrete Ser sites on beta strands within RRM1/RRM2; Ser/Thr kinases, phosphatases, and phospho-regulatory proteins: regulatory Ser/Thr sites; DNA (cytosine-5)-methyltransferases (DNMT/Dcm): Ser/Thr sites implicated in regulation; Plant bZIP/bHLH transcription factors: Ser/Thr phospho-motifs in activation/regulatory regions; Vesicle-trafficking and cytoskeletal adaptors/scaffolds (e.g., CKAP2L): discrete Ser sites in low-complexity linkers; Undecaprenyl-diphosphatases (bacterial): Ser/Thr motifs in extracytoplasmic loops or N-terminal regions; Membrane proteins and ion channels: cytosolic Ser/Thr segments; Purine nucleoside phosphorylase family and translation-related components: scattered Ser/Thr sites within structured regions.",
+      "is_anchor": false,
+      "x": 9.750927925109863,
+      "y": 9.601006507873535
+    },
+    {
+      "key": "2^16:8898",
+      "feature_id": "F8898",
+      "feature_index": 8898,
+      "sae_dim": "2^16",
+      "cosine": 0.1909410059452057,
+      "category": "2^16 feature",
+      "label": "Feature F8898 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.49315071105957,
+      "y": 9.552555084228516
+    },
+    {
+      "key": "2^16:51602",
+      "feature_id": "F51602",
+      "feature_index": 51602,
+      "sae_dim": "2^16",
+      "cosine": 0.1906653642654419,
+      "category": "2^16 feature",
+      "label": "Feature F51602 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.212841033935547,
+      "y": 9.55361557006836
+    },
+    {
+      "key": "2^16:3830",
+      "feature_id": "F3830",
+      "feature_index": 3830,
+      "sae_dim": "2^16",
+      "cosine": 0.18856339156627655,
+      "category": "2^16 feature",
+      "label": "Feature F3830 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.547182083129883,
+      "y": 7.939599514007568
+    },
+    {
+      "key": "2^16:15849",
+      "feature_id": "F15849",
+      "feature_index": 15849,
+      "sae_dim": "2^16",
+      "cosine": 0.1846366822719574,
+      "category": "2^16 feature",
+      "label": "Feature F15849 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.152723789215088,
+      "y": 9.157500267028809
+    },
+    {
+      "key": "2^16:60659",
+      "feature_id": "F60659",
+      "feature_index": 60659,
+      "sae_dim": "2^16",
+      "cosine": 0.18386617302894592,
+      "category": "2^16 feature",
+      "label": "Feature F60659 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.54825496673584,
+      "y": 8.83737850189209
+    },
+    {
+      "key": "2^16:46167",
+      "feature_id": "F46167",
+      "feature_index": 46167,
+      "sae_dim": "2^16",
+      "cosine": 0.18024396896362305,
+      "category": "2^16 feature",
+      "label": "Feature F46167 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.089841842651367,
+      "y": 9.650154113769531
+    },
+    {
+      "key": "2^16:10263",
+      "feature_id": "F10263",
+      "feature_index": 10263,
+      "sae_dim": "2^16",
+      "cosine": 0.1787276268005371,
+      "category": "2^16 feature",
+      "label": "Feature F10263 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.909120082855225,
+      "y": 9.739108085632324
+    },
+    {
+      "key": "2^16:33894",
+      "feature_id": "F33894",
+      "feature_index": 33894,
+      "sae_dim": "2^16",
+      "cosine": 0.17786329984664917,
+      "category": "2^16 feature",
+      "label": "Feature F33894 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.247616767883301,
+      "y": 8.184361457824707
+    },
+    {
+      "key": "2^14:14620",
+      "feature_id": "F14620",
+      "feature_index": 14620,
+      "sae_dim": "2^14",
+      "cosine": 0.17674070596694946,
+      "category": "Ligand-binding site",
+      "label": "ABC NBD LSGGQ C-loop",
+      "summary": "ABC transporter NBD signature (C\u2011loop) motif recognition\u2014specifically the conserved LSGGQ segment, with strongest focus on the serine preceding the Gly\u2011Gly pair\u2014plus weaker sensitivity to adjacent ATP\u2011site elements (notably the Walker A/P\u2011loop)",
+      "description": "Summary: ABC transporter NBD signature (C\u2011loop) motif recognition\u2014specifically the conserved LSGGQ segment, with strongest focus on the serine preceding the Gly\u2011Gly pair\u2014plus weaker sensitivity to adjacent ATP\u2011site elements (notably the Walker A/P\u2011loop)\nActivation pattern: Residue\u2011level peaks centered on the Ser of the LSGGQ signature at a loop\u2192helix junction within ABC/ABC\u2011like ATPase nucleotide\u2011binding domains; occasional low signals on the flanking Gly/Gln and nearby ATP\u2011site residues (Walker A/P\u2011loop; sometimes an adjacent Asp from the D\u2011loop). Proteins with two NBDs show two such peaks; minimal to no activation outside NBDs or in transmembrane regions.\nExemplars: - Spermidine/putrescine importer PotA (ABC importer NBD): strong on the LSGGQ Ser; minor at the Walker A region.\n- Cobalt importer CbiO (ABC importer NBD): strong on the LSGGQ Ser; weak signals in the P\u2011loop and a nearby \u03b2\u2011strand.\n- Peptide exporter SkfE (ABC exporter NBD): peak at the LSGGQ\u2011region Ser; weak within the annotated ATP\u2011binding loop.\n- Antigen peptide transporter TAP1 (eukaryotic ABC exporter NBD): strong at the LSGGQ Ser; additional weak activation in the Walker A GxxxxGKS/T segment.\n- ABC transporter I family member (bacterial ABC NBD): dominant peak at the LSGGQ Ser; minor at ATP\u2011binding stretch.\n- ABCE1/RLI1 (ABC\u2011like ATPase with two NBDs, ribosome recycling): two strong peaks at the Ser of each LSGG\u2026 signature; weaker signals at each domain\u2019s Walker A region.",
+      "is_anchor": false,
+      "x": 7.896602630615234,
+      "y": 10.636577606201172
+    },
+    {
+      "key": "2^14:15101",
+      "feature_id": "F15101",
+      "feature_index": 15101,
+      "sae_dim": "2^14",
+      "cosine": 0.17345952987670898,
+      "category": "Structural motif",
+      "label": "ABC NBD beta1 strand",
+      "summary": "Conserved N-terminal \u03b2-strand of ABC nucleotide-binding domains (\u03b21), immediately upstream of the Walker A P-loop and adjacent to the A-loop aromatic residue, shared by ABC ATPases across transport and non-transport families.",
+      "description": "Summary: Conserved N-terminal \u03b2-strand of ABC nucleotide-binding domains (\u03b21), immediately upstream of the Walker A P-loop and adjacent to the A-loop aromatic residue, shared by ABC ATPases across transport and non-transport families.\nActivation pattern: Residue-level peaks on single polar/acidic residues (most often S/N/D, with frequent H/G neighbors) within this \u03b2-strand of the ABC domain; typically one sharp peak per NBD. In bacterial single-NBD proteins the peak lies near the extreme N-terminus (~positions 5\u201330); in long eukaryotic ABC transporters two widely separated peaks appear (one per NBD). Peaks sit in \u03b2-sheet elements with high structural confidence and do not coincide with the Walker A lysine or other annotated ATP-binding residues.\nExemplars: - Energy-coupling factor (ECF) transporter A subunits (EcfA1/EcfA2): strong S peak in the NBD \u03b2-strand with neighboring D/H also activated.\n- Peptide/bacteriocin secretion ABC exporters (e.g., SkfE): S at the N-terminal \u03b2-strand of the ABC domain; no activation on the Walker A site.\n- Multidrug ABC transporters with tandem NBDs (e.g., YbhF-like): identical peaks near the start of each ABC domain (D/N in \u03b2-strand), one per NBD.\n- ABCB7 iron\u2013sulfur cluster exporter: S within an LSGIS segment located between the A-loop Tyr and the Walker A motif, consistent with the \u03b2-strand preceding the P-loop.\n- ABCD4 cobalamin transporter: S in a \u03b2-sheet of the C-terminal NBD, distinct from the annotated ATP-binding site.\n- ABCI/ABCI11 family (ECF-like/plant plastid ABCI subunits): N in the NBD \u03b2-strand just upstream of the Walker A region; targeting peptides show no activation.",
+      "is_anchor": false,
+      "x": 9.097600936889648,
+      "y": 8.537914276123047
+    },
+    {
+      "key": "2^16:59229",
+      "feature_id": "F59229",
+      "feature_index": 59229,
+      "sae_dim": "2^16",
+      "cosine": 0.17029324173927307,
+      "category": "2^16 feature",
+      "label": "Feature F59229 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.474872589111328,
+      "y": 8.58323860168457
+    },
+    {
+      "key": "2^16:48792",
+      "feature_id": "F48792",
+      "feature_index": 48792,
+      "sae_dim": "2^16",
+      "cosine": 0.16980013251304626,
+      "category": "2^16 feature",
+      "label": "Feature F48792 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.640521049499512,
+      "y": 10.16064167022705
+    },
+    {
+      "key": "2^16:21335",
+      "feature_id": "F21335",
+      "feature_index": 21335,
+      "sae_dim": "2^16",
+      "cosine": 0.16882415115833282,
+      "category": "2^16 feature",
+      "label": "Feature F21335 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.659074783325195,
+      "y": 8.956716537475586
+    },
+    {
+      "key": "2^13:5659",
+      "feature_id": "F5659",
+      "feature_index": 5659,
+      "sae_dim": "2^13",
+      "cosine": 0.16624286770820618,
+      "category": "2^13 feature",
+      "label": "Feature F5659 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.029551029205322,
+      "y": 8.56651782989502
+    },
+    {
+      "key": "2^16:65465",
+      "feature_id": "F65465",
+      "feature_index": 65465,
+      "sae_dim": "2^16",
+      "cosine": 0.16312623023986816,
+      "category": "2^16 feature",
+      "label": "Feature F65465 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.890339851379395,
+      "y": 9.605674743652344
+    },
+    {
+      "key": "2^16:38572",
+      "feature_id": "F38572",
+      "feature_index": 38572,
+      "sae_dim": "2^16",
+      "cosine": 0.16277708113193512,
+      "category": "2^16 feature",
+      "label": "Feature F38572 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.706865310668945,
+      "y": 9.77376937866211
+    },
+    {
+      "key": "2^16:9636",
+      "feature_id": "F9636",
+      "feature_index": 9636,
+      "sae_dim": "2^16",
+      "cosine": 0.16156768798828125,
+      "category": "2^16 feature",
+      "label": "Feature F9636 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.285696029663086,
+      "y": 10.32507610321045
+    },
+    {
+      "key": "2^16:57248",
+      "feature_id": "F57248",
+      "feature_index": 57248,
+      "sae_dim": "2^16",
+      "cosine": 0.1611723005771637,
+      "category": "2^16 feature",
+      "label": "Feature F57248 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.091232299804688,
+      "y": 10.644052505493164
+    },
+    {
+      "key": "2^14:745",
+      "feature_id": "F745",
+      "feature_index": 745,
+      "sae_dim": "2^14",
+      "cosine": 0.16069191694259644,
+      "category": "Catalytic function",
+      "label": "HRD-DKP kinase catalytic loop",
+      "summary": "Canonical protein kinase catalytic loop motif (subdomain VIb\u2013VII), centered on the HRD motif and the immediately following DKP residues (consensus HRD[L/V]KP), often extending toward the downstream DFG glycine; marks the active-site proton-acceptor Asp and adjacent Lys/Pro that shape the kinase active site across Ser/Thr, Tyr, dual-specificity, and kinase-like/pseudokinases in diverse taxa.",
+      "description": "Summary: Canonical protein kinase catalytic loop motif (subdomain VIb\u2013VII), centered on the HRD motif and the immediately following DKP residues (consensus HRD[L/V]KP), often extending toward the downstream DFG glycine; marks the active-site proton-acceptor Asp and adjacent Lys/Pro that shape the kinase active site across Ser/Thr, Tyr, dual-specificity, and kinase-like/pseudokinases in diverse taxa.\nActivation pattern: Short, contiguous windows (~8\u201315 aa) within kinase domains with residue-level peaks at the Lys located two residues C\u2011terminal to the catalytic Asp (HRD\u2192K), with secondary activation on the His/Asp of HRD and the following Pro; frequently includes a nearby downstream Gly (from the DFG motif). Typically one peak per kinase domain, with occasional multiple clusters in multi-kinase or repeated architectures.\nExemplars: - MAPK pathway kinase (MEK5/MAP2K): activation on the catalytic loop; peak at Lys two residues after the catalytic Asp.\n- Cell\u2011cycle inhibitory kinase (WEE/Myt1 family): catalytic loop highlighted; Lys peak two residues C\u2011terminal to the active\u2011site Asp, spanning loop-to-helix transition.\n- eIF2\u03b1 kinase (PKR): localized to catalytic loop near the active\u2011site Asp; sharp peak at adjacent Lys and surrounding DKP residues.\n- Plant serine/threonine kinase: activation across the D\u2013K\u2013P segment of the catalytic loop with a Lys peak; extends into the following helix and often toward DFG Gly.\n- Vps15 serine/threonine protein kinase: N\u2011terminal kinase domain catalytic loop; peak at Lys two residues after the proton\u2011acceptor Asp.",
+      "is_anchor": false,
+      "x": 6.9015936851501465,
+      "y": 10.737651824951172
+    },
+    {
+      "key": "2^16:7668",
+      "feature_id": "F7668",
+      "feature_index": 7668,
+      "sae_dim": "2^16",
+      "cosine": 0.16012005507946014,
+      "category": "2^16 feature",
+      "label": "Feature F7668 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.637475967407227,
+      "y": 8.789509773254395
+    },
+    {
+      "key": "2^14:1129",
+      "feature_id": "F1129",
+      "feature_index": 1129,
+      "sae_dim": "2^14",
+      "cosine": 0.15824076533317566,
+      "category": "Ligand-binding site",
+      "label": "SAM-binding glycine-rich loop",
+      "summary": "Conserved S-adenosyl-L-methionine (SAM) cofactor-binding glycine-rich loop (motif I) of Rossmann-like SAM-dependent methyltransferase domains, typically the N\u2011terminal GxG loop flanked by hydrophobic and acidic residues that form the SAM-binding site",
+      "description": "Summary: Conserved S-adenosyl-L-methionine (SAM) cofactor-binding glycine-rich loop (motif I) of Rossmann-like SAM-dependent methyltransferase domains, typically the N\u2011terminal GxG loop flanked by hydrophobic and acidic residues that form the SAM-binding site\nActivation pattern: Predominantly residue-level peaks on one or a few glycines within the motif I loop (often a GxG pair), with occasional signal on an adjacent acidic residue (D/E) and spillover onto the preceding beta-strand; usually near the N-terminus of the MTase domain, or internal in multidomain proteins\nExemplars: - tRNA 5-carboxymethoxyuridine methyltransferase (Trm family): peak on the SAM-binding glycine in motif I, with minor activation on the preceding beta-strand\n- Ubiquinone/Coenzyme Q O-methyltransferase (UbiE/Coq family): peak on the SAM-binding glycine and nearby D/E within the binding site loop\n- Small RNA 2'-O-methyltransferase (Hen1-like): peak on the SAM-binding glycine in motif I, plus weaker signal on a nearby SAM-binding D/E\n- mRNA cap N7 methyltransferases (eukaryotic and viral): activation on the conserved N-terminal GxG loop of the SAM-binding site\n- Type II DNA N6-adenine/N4-cytosine methyltransferases: activation on the N-terminal glycine-rich SAM-binding loop\n- Osmoprotectant small-molecule methyltransferases (glycine/sarcosine/dimethylglycine): activation on the motif I SAM-binding glycine(s)\n- Protein arginine methyltransferases: activation on the Rossmann-like SAM-binding GxG loop",
+      "is_anchor": false,
+      "x": 5.478981018066406,
+      "y": 10.18295669555664
+    },
+    {
+      "key": "2^13:4933",
+      "feature_id": "F4933",
+      "feature_index": 4933,
+      "sae_dim": "2^13",
+      "cosine": 0.1578364223241806,
+      "category": "2^13 feature",
+      "label": "Feature F4933 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.875802040100098,
+      "y": 6.6929450035095215
+    },
+    {
+      "key": "2^16:29501",
+      "feature_id": "F29501",
+      "feature_index": 29501,
+      "sae_dim": "2^16",
+      "cosine": 0.1574295163154602,
+      "category": "2^16 feature",
+      "label": "Feature F29501 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.053093910217285,
+      "y": 7.184488773345947
+    },
+    {
+      "key": "2^16:63047",
+      "feature_id": "F63047",
+      "feature_index": 63047,
+      "sae_dim": "2^16",
+      "cosine": 0.1558976024389267,
+      "category": "2^16 feature",
+      "label": "Feature F63047 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.71160888671875,
+      "y": 9.264765739440918
+    },
+    {
+      "key": "2^16:49042",
+      "feature_id": "F49042",
+      "feature_index": 49042,
+      "sae_dim": "2^16",
+      "cosine": 0.15461377799510956,
+      "category": "2^16 feature",
+      "label": "Feature F49042 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.948217391967773,
+      "y": 8.473455429077148
+    },
+    {
+      "key": "2^16:28942",
+      "feature_id": "F28942",
+      "feature_index": 28942,
+      "sae_dim": "2^16",
+      "cosine": 0.15420393645763397,
+      "category": "2^16 feature",
+      "label": "Feature F28942 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.745696067810059,
+      "y": 9.307966232299805
+    },
+    {
+      "key": "2^16:24705",
+      "feature_id": "F24705",
+      "feature_index": 24705,
+      "sae_dim": "2^16",
+      "cosine": 0.1537858545780182,
+      "category": "2^16 feature",
+      "label": "Feature F24705 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.586735725402832,
+      "y": 8.255422592163086
+    },
+    {
+      "key": "2^14:14710",
+      "feature_id": "F14710",
+      "feature_index": 14710,
+      "sae_dim": "2^14",
+      "cosine": 0.15200623869895935,
+      "category": "Catalytic function",
+      "label": "Phosphate-coupling Ser/Thr residues",
+      "summary": "Conserved phosphate-coupling serine/threonine residues in phosphotransfer and NTP-handling enzymes\u2014most prominently the receiver-domain \u201cswitch\u201d Thr/Ser of two\u2011component response regulators, the Walker\u2011A Thr/Ser of P\u2011loop NTPases, and the Thr in the HAD DxDT/V catalytic motif\u2014with analogous Ser/Thr positions flagged in histidine kinase catalytic regions and other ATP/phosphate\u2011processing domains.",
+      "description": "Summary: Conserved phosphate-coupling serine/threonine residues in phosphotransfer and NTP-handling enzymes\u2014most prominently the receiver-domain \u201cswitch\u201d Thr/Ser of two\u2011component response regulators, the Walker\u2011A Thr/Ser of P\u2011loop NTPases, and the Thr in the HAD DxDT/V catalytic motif\u2014with analogous Ser/Thr positions flagged in histidine kinase catalytic regions and other ATP/phosphate\u2011processing domains.\nActivation pattern: Residue-level peaks focused on individual Ser/Thr, often with smaller signals on nearby Asp/Gly; in response regulators the main peak is a Thr/Ser around positions 80\u201390 within a \u03b2\u2011strand; in histidine kinases, peaks cluster in the cytosolic kinase (CA/DHp) region at higher sequence positions; in P\u2011loop enzymes, at the Walker\u2011A P\u2011loop; in HAD phosphatases, at motif I (DxDT/V). Multiple residues per protein can be flagged; disordered regions are generally avoided; occasional Asp peaks occur, especially in response regulators.\nExemplars: - Two-component response regulators (CheY-like): marks the conserved \u201cswitch\u201d Thr/Ser (CheY T87 equivalent) in the \u03b24\u2013\u03b25 region rather than the phosphorylated Asp.\n- Histidine kinases (bacterial and eukaryotic hybrid HKs): marks Ser/Thr in the cytosolic CA/DHp kinase module near ATP-binding elements.\n- HAD-like hydrolases/sugar-phosphate phosphatases: marks the Thr of the DxDT/V motif I, sometimes adjacent catalytic Asp residues.\n- P-loop NTPase helicases (RecQ, SWI/SNF-like, viral helicases): marks the Walker A Thr/Ser within the GxxxxGKT/S P-loop (Thr adjacent to glycines).\n- Plant pseudo-response regulators (APRR/PRR): marks the conserved receiver-domain switch Thr/Ser despite loss of the phosphorylatable Asp.\n- P-type ATPases: occasional Ser/Thr hotspots in cytosolic loops at secondary-structure junctions near phosphate-handling domains.",
+      "is_anchor": false,
+      "x": 8.575343132019043,
+      "y": 10.211671829223633
+    },
+    {
+      "key": "2^16:46955",
+      "feature_id": "F46955",
+      "feature_index": 46955,
+      "sae_dim": "2^16",
+      "cosine": 0.15196168422698975,
+      "category": "2^16 feature",
+      "label": "Feature F46955 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.900054931640625,
+      "y": 8.828262329101562
+    },
+    {
+      "key": "2^16:9715",
+      "feature_id": "F9715",
+      "feature_index": 9715,
+      "sae_dim": "2^16",
+      "cosine": 0.1507132351398468,
+      "category": "2^16 feature",
+      "label": "Feature F9715 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.341064929962158,
+      "y": 7.380553245544434
+    },
+    {
+      "key": "2^16:56066",
+      "feature_id": "F56066",
+      "feature_index": 56066,
+      "sae_dim": "2^16",
+      "cosine": 0.15057630836963654,
+      "category": "2^16 feature",
+      "label": "Feature F56066 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.240545272827148,
+      "y": 6.75187873840332
+    },
+    {
+      "key": "2^16:56031",
+      "feature_id": "F56031",
+      "feature_index": 56031,
+      "sae_dim": "2^16",
+      "cosine": 0.14915163815021515,
+      "category": "2^16 feature",
+      "label": "Feature F56031 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.7088541984558105,
+      "y": 10.124202728271484
+    },
+    {
+      "key": "2^16:23049",
+      "feature_id": "F23049",
+      "feature_index": 23049,
+      "sae_dim": "2^16",
+      "cosine": 0.14882871508598328,
+      "category": "2^16 feature",
+      "label": "Feature F23049 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.667361736297607,
+      "y": 9.379072189331055
+    },
+    {
+      "key": "2^16:24992",
+      "feature_id": "F24992",
+      "feature_index": 24992,
+      "sae_dim": "2^16",
+      "cosine": 0.14862197637557983,
+      "category": "2^16 feature",
+      "label": "Feature F24992 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.9203948974609375,
+      "y": 9.288249015808105
+    },
+    {
+      "key": "2^16:5578",
+      "feature_id": "F5578",
+      "feature_index": 5578,
+      "sae_dim": "2^16",
+      "cosine": 0.14806239306926727,
+      "category": "2^16 feature",
+      "label": "Feature F5578 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.709425926208496,
+      "y": 10.924150466918945
+    },
+    {
+      "key": "2^16:49241",
+      "feature_id": "F49241",
+      "feature_index": 49241,
+      "sae_dim": "2^16",
+      "cosine": 0.14718620479106903,
+      "category": "2^16 feature",
+      "label": "Feature F49241 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.760666847229004,
+      "y": 9.419715881347656
+    },
+    {
+      "key": "2^16:46925",
+      "feature_id": "F46925",
+      "feature_index": 46925,
+      "sae_dim": "2^16",
+      "cosine": 0.14545169472694397,
+      "category": "2^16 feature",
+      "label": "Feature F46925 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.524044036865234,
+      "y": 8.089730262756348
+    },
+    {
+      "key": "2^16:63321",
+      "feature_id": "F63321",
+      "feature_index": 63321,
+      "sae_dim": "2^16",
+      "cosine": 0.143769770860672,
+      "category": "2^16 feature",
+      "label": "Feature F63321 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.039931297302246,
+      "y": 9.429095268249512
+    },
+    {
+      "key": "2^16:53747",
+      "feature_id": "F53747",
+      "feature_index": 53747,
+      "sae_dim": "2^16",
+      "cosine": 0.14311087131500244,
+      "category": "2^16 feature",
+      "label": "Feature F53747 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.967523574829102,
+      "y": 6.777474403381348
+    },
+    {
+      "key": "2^14:6096",
+      "feature_id": "F6096",
+      "feature_index": 6096,
+      "sae_dim": "2^14",
+      "cosine": 0.14227113127708435,
+      "category": "Structural motif",
+      "label": "HATPase_c ATP-lid turn",
+      "summary": "A short \u03b2-strand-to-loop motif within the catalytic HATPase_c (CA) domain of GHKL-fold histidine kinases (and closely related GHKL ATPases), corresponding to the strand\u2013turn at the edge of the ATP-binding site/ATP-lid. The motif is typically centered on a Ser/Thr, often preceded by acidic residues and followed by a Pro (occasionally including a His), and recurs in the C\u2011terminal cytosolic portion of diverse HKs.",
+      "description": "Summary: A short \u03b2-strand-to-loop motif within the catalytic HATPase_c (CA) domain of GHKL-fold histidine kinases (and closely related GHKL ATPases), corresponding to the strand\u2013turn at the edge of the ATP-binding site/ATP-lid. The motif is typically centered on a Ser/Thr, often preceded by acidic residues and followed by a Pro (occasionally including a His), and recurs in the C\u2011terminal cytosolic portion of diverse HKs.\nActivation pattern: Residue-level peaks on contiguous 4\u20138 aa windows. Activations localize to the C-terminal cytosolic HATPase_c domain, mapping to the end of a beta-strand that transitions into a coil/turn; sequences are enriched for Ser/Thr and acidic residues with a characteristic S/T\u2013x\u2013P pattern and sometimes an adjacent His. Multiple short windows may occur per protein. Homologous GHKL ATPases co-activate at lower scores; occasional weak hits appear in other kinases.\nExemplars: - Two-component sensor histidine kinases (e.g., alginate biosynthesis sensor KinB): activation on a short \u03b2-strand\u2192turn in the CA (HATPase_c) domain, peak on Ser within a V\u2013x\u2013S\u2013x\u2013P pattern.\n- Short-chain fatty acid/acetate-sensing histidine kinase AtoS: same \u03b2-strand\u2192loop element in the CA domain, adjacent to residues known to affect ATP binding.\n- Redox/oxygen-responsive SrrB family histidine kinases: activation on the \u03b2-strand terminus and following turn in HATPase_c, centered on Ser.\n- Sporulation histidine kinase KinA (phosphorelay initiator): activation on a DSHP-containing \u03b2-strand\u2192turn with a trailing Pro in the CA domain.\n- Virulence/type III secretion regulator SsrA histidine kinase: activation on the same CA-domain \u03b2-strand\u2192turn (Ser-centered, Pro-terminated).\n- Branched-chain \u03b1-ketoacid dehydrogenase kinase (GHKL-like regulatory kinase): co-activation on the equivalent \u03b2-strand\u2192turn bordering the ATP-binding site in its histidine-kinase-like HATPase fold.\n- Chemotaxis histidine kinase CheA (soluble HK): activation on the corresponding \u03b2-strand\u2192turn in the P4 catalytic (HATPase_c) domain.",
+      "is_anchor": false,
+      "x": 9.3825101852417,
+      "y": 8.607705116271973
+    },
+    {
+      "key": "2^14:5871",
+      "feature_id": "F5871",
+      "feature_index": 5871,
+      "sae_dim": "2^14",
+      "cosine": 0.14211182296276093,
+      "category": "Catalytic function",
+      "label": "SDR catalytic \u03b2\u2013\u03b1 turn",
+      "summary": "Active-site \u03b2\u2013\u03b1 turn of Rossmann-fold NAD(P)-dependent dehydrogenases/reductases (especially SDRs), i.e., the short loop at the C-terminus of a \u03b2-strand that precedes the helix carrying the YXXXK motif and houses/abuts the catalytic Ser/Thr proton donor and NAD(P)/substrate contacts",
+      "description": "Summary: Active-site \u03b2\u2013\u03b1 turn of Rossmann-fold NAD(P)-dependent dehydrogenases/reductases (especially SDRs), i.e., the short loop at the C-terminus of a \u03b2-strand that precedes the helix carrying the YXXXK motif and houses/abuts the catalytic Ser/Thr proton donor and NAD(P)/substrate contacts\nActivation pattern: Predominantly residue-level peaks: a single dominant activation on a small residue (Ser/Thr/Gly/Ala/Asn/Val/Ile) in the 120\u2013200 region within the \u03b2\u2013\u03b1 turn of the Rossmann core, often immediately adjacent to annotated catalytic or substrate/NAD(P) binding residues; occasional weaker secondary peaks on the flanking \u03b2-strand or additional NAD-binding contact sites\nExemplars: - Sphingolipid 3-ketodihydrosphingosine reductase (KDSR/TSC10; SDR): peak on the catalytic Ser (proton donor) in the \u03b2\u2013\u03b1 turn.\n- Short-chain dehydrogenase AusX (SDR): peak on an Ala at the end of a \u03b2-strand entering the active-site helix; minor nearby peaks.\n- SDR family member 7 (steroid/retinoid-type SDR): peak on an Asn in the \u03b2\u2013\u03b1 turn immediately adjacent to a substrate-binding Ser.\n- 3-hydroxyacyl-CoA dehydrogenase type-2 (mitochondrial SDR): peak on an Ala directly adjacent to an annotated substrate-binding Ser in the catalytic loop.\n- Dihydromonapterin reductase (FolM-type SDR): peak on a Thr in the \u03b2\u2013\u03b1 connector preceding the active-site helix.\n- dTDP-6-deoxy-L-talose 4-dehydrogenase (sugar-nucleotide SDR): peaks at Gly/Ala that coincide with or abut NAD+ and substrate-binding residues in the Rossmann pocket.\n- Light-dependent protochlorophyllide reductase (LPOR; plant/bacterial SDR): peak on a Gly in the \u03b2\u2013\u03b1 loop near the active-site region.",
+      "is_anchor": false,
+      "x": 7.398179054260254,
+      "y": 6.9584784507751465
+    },
+    {
+      "key": "2^16:30740",
+      "feature_id": "F30740",
+      "feature_index": 30740,
+      "sae_dim": "2^16",
+      "cosine": 0.1420360505580902,
+      "category": "2^16 feature",
+      "label": "Feature F30740 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.44448471069336,
+      "y": 10.103503227233887
+    },
+    {
+      "key": "2^16:32604",
+      "feature_id": "F32604",
+      "feature_index": 32604,
+      "sae_dim": "2^16",
+      "cosine": 0.14141538739204407,
+      "category": "2^16 feature",
+      "label": "Feature F32604 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.747079372406006,
+      "y": 10.426395416259766
+    },
+    {
+      "key": "2^16:7891",
+      "feature_id": "F7891",
+      "feature_index": 7891,
+      "sae_dim": "2^16",
+      "cosine": 0.14095449447631836,
+      "category": "2^16 feature",
+      "label": "Feature F7891 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.726017951965332,
+      "y": 10.521815299987793
+    },
+    {
+      "key": "2^16:7163",
+      "feature_id": "F7163",
+      "feature_index": 7163,
+      "sae_dim": "2^16",
+      "cosine": 0.1405530422925949,
+      "category": "2^16 feature",
+      "label": "Feature F7163 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.620599746704102,
+      "y": 6.850032806396484
+    },
+    {
+      "key": "2^16:63401",
+      "feature_id": "F63401",
+      "feature_index": 63401,
+      "sae_dim": "2^16",
+      "cosine": 0.13964734971523285,
+      "category": "2^16 feature",
+      "label": "Feature F63401 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.930262088775635,
+      "y": 10.673702239990234
+    },
+    {
+      "key": "2^16:38558",
+      "feature_id": "F38558",
+      "feature_index": 38558,
+      "sae_dim": "2^16",
+      "cosine": 0.13937325775623322,
+      "category": "2^16 feature",
+      "label": "Feature F38558 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.498867034912109,
+      "y": 9.768847465515137
+    },
+    {
+      "key": "2^16:63693",
+      "feature_id": "F63693",
+      "feature_index": 63693,
+      "sae_dim": "2^16",
+      "cosine": 0.13936647772789001,
+      "category": "2^16 feature",
+      "label": "Feature F63693 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.286447525024414,
+      "y": 7.199228286743164
+    },
+    {
+      "key": "2^13:4510",
+      "feature_id": "F4510",
+      "feature_index": 4510,
+      "sae_dim": "2^13",
+      "cosine": 0.13871659338474274,
+      "category": "2^13 feature",
+      "label": "Feature F4510 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.502177238464355,
+      "y": 7.599937438964844
+    },
+    {
+      "key": "2^14:12171",
+      "feature_id": "F12171",
+      "feature_index": 12171,
+      "sae_dim": "2^14",
+      "cosine": 0.1381695568561554,
+      "category": "Ligand-binding site",
+      "label": "P-loop Walker A S/T",
+      "summary": "Walker A/P-loop (GxxxxGKS/T) ATP phosphate-binding motif of P-loop NTPases, most prominently the nucleotide-binding domains of ABC transporters, with strongest sensitivity to the serine/threonine immediately following the invariant lysine at the start of the P-loop helix",
+      "description": "Summary: Walker A/P-loop (GxxxxGKS/T) ATP phosphate-binding motif of P-loop NTPases, most prominently the nucleotide-binding domains of ABC transporters, with strongest sensitivity to the serine/threonine immediately following the invariant lysine at the start of the P-loop helix\nActivation pattern: Residue-level peaks in a compact 2\u20135 residue cluster centered on the S/T that follows the Walker A lysine, with weaker signal on the lysine itself and nearby Gly/Asn; essentially no signal on Walker B acidic residues. Typically one cluster per nucleotide-binding domain: a single cluster in bacterial/half-transporters and isolated NBDs, two clusters in full-length eukaryotic ABC proteins or ABC-type ATPases. Positions align with NBD Walker A regions (\u224830\u201360 in bacterial NBDs; \u2248450\u2013700 and \u22481100\u20131350 for the two sites in large eukaryotic ABCs).\nExemplars: - ECF transporter ATP-binding protein (EcfA2): activation on the Walker A patch, peaking at S adjacent to the conserved K within the annotated ATP-binding site.\n- ABC peptide exporter (YydI): sharp peak at S at the start of the Walker A helix overlapping the ATP-binding annotation.\n- Tyrosine transport ABC ATP-binding protein: peak at S within the GxxxxGKS/T segment at the coil-to-helix transition of the P-loop.\n- Nickel transport ABC ATP-binding protein (NikD): peak at S in the annotated Walker A motif with minor signal on the adjacent K.\n- Yeast elongation factor 3 (ABC-type ATPase): two discrete peaks at the S directly after the conserved K in each of the two ABC NBD Walker A motifs.\n- CydD ABC transporter NBD: localized peak at S near the conserved K within the annotated ATP-binding (Walker A) region.",
+      "is_anchor": false,
+      "x": 8.511578559875488,
+      "y": 10.666535377502441
+    },
+    {
+      "key": "2^13:4571",
+      "feature_id": "F4571",
+      "feature_index": 4571,
+      "sae_dim": "2^13",
+      "cosine": 0.13808214664459229,
+      "category": "2^13 feature",
+      "label": "Feature F4571 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.03959846496582,
+      "y": 10.094220161437988
+    },
+    {
+      "key": "2^16:60129",
+      "feature_id": "F60129",
+      "feature_index": 60129,
+      "sae_dim": "2^16",
+      "cosine": 0.13764454424381256,
+      "category": "2^16 feature",
+      "label": "Feature F60129 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.612285614013672,
+      "y": 7.218574523925781
+    },
+    {
+      "key": "2^13:1640",
+      "feature_id": "F1640",
+      "feature_index": 1640,
+      "sae_dim": "2^13",
+      "cosine": 0.13718487322330475,
+      "category": "2^13 feature",
+      "label": "Feature F1640 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.207998275756836,
+      "y": 7.281930923461914
+    },
+    {
+      "key": "2^16:44906",
+      "feature_id": "F44906",
+      "feature_index": 44906,
+      "sae_dim": "2^16",
+      "cosine": 0.13599447906017303,
+      "category": "2^16 feature",
+      "label": "Feature F44906 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.8125481605529785,
+      "y": 10.142250061035156
+    },
+    {
+      "key": "2^16:6599",
+      "feature_id": "F6599",
+      "feature_index": 6599,
+      "sae_dim": "2^16",
+      "cosine": 0.13512460887432098,
+      "category": "2^16 feature",
+      "label": "Feature F6599 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.083394527435303,
+      "y": 10.465937614440918
+    },
+    {
+      "key": "2^16:14369",
+      "feature_id": "F14369",
+      "feature_index": 14369,
+      "sae_dim": "2^16",
+      "cosine": 0.13493159413337708,
+      "category": "2^16 feature",
+      "label": "Feature F14369 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.907248020172119,
+      "y": 7.320723533630371
+    },
+    {
+      "key": "2^16:26137",
+      "feature_id": "F26137",
+      "feature_index": 26137,
+      "sae_dim": "2^16",
+      "cosine": 0.13418257236480713,
+      "category": "2^16 feature",
+      "label": "Feature F26137 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.958975791931152,
+      "y": 10.469542503356934
+    },
+    {
+      "key": "2^14:1535",
+      "feature_id": "F1535",
+      "feature_index": 1535,
+      "sae_dim": "2^14",
+      "cosine": 0.13367708027362823,
+      "category": "Ligand-binding site",
+      "label": "Adenosyl cofactor acidic anchors",
+      "summary": "Conserved acidic residues (Asp/Glu), often paired with a nearby Ser/Thr, that anchor and/or catalyze at nucleotide\u2011cofactor binding sites in dinucleotide\u2011utilizing enzymes\u2014most prominently the adenosyl\u2011moiety binding acids of NAD(P)\u2011dependent oxidoreductases (e.g., SDR family) and SAM\u2011dependent methyltransferases (Class I and related), including enzymes that tailor carbohydrates and secondary metabolites",
+      "description": "Summary: Conserved acidic residues (Asp/Glu), often paired with a nearby Ser/Thr, that anchor and/or catalyze at nucleotide\u2011cofactor binding sites in dinucleotide\u2011utilizing enzymes\u2014most prominently the adenosyl\u2011moiety binding acids of NAD(P)\u2011dependent oxidoreductases (e.g., SDR family) and SAM\u2011dependent methyltransferases (Class I and related), including enzymes that tailor carbohydrates and secondary metabolites\nActivation pattern: Predominantly residue\u2011level peaks (typically 2\u20134 per protein) centered on acidic side chains in the N\u2011terminal/mid regions (~50\u2013150), with occasional secondary peaks later in the domain (~230\u2013300). Peaks often occur as Asp/Glu with a neighboring Ser/Thr, mapping to glycine\u2011rich/loop regions of nucleotide\u2011cofactor pockets; multidomain enzymes can show multiple such sites.\nExemplars: - Short\u2011chain dehydrogenase/reductase (SDR) oxidoreductases (e.g., 3\u2011oxoacyl\u2011ACP reductases, sugar epimerases): activation on the \u03b2\u2011loop acidic residue adjacent to the Rossmann glycine\u2011rich loop that binds the adenosyl ribose of NAD(H)/NADP(H), often with a nearby Ser/Thr.\n- Class I SAM\u2011dependent RNA methyltransferases (rRNA/tRNA/snRNA MTases such as KsgA/Dim1 and many Trm/Trm\u2011like enzymes): activation on the conserved acidic residues in the SAM\u2011binding/catalytic motifs (e.g., motif I Asp and/or motif IV Asp) near the active site, sometimes with adjacent Ser/Thr.\n- DNA methyltransferases (adenine and cytosine MTases): activation on the catalytic Asp of the DPPY/DPC\u2011like motif and neighboring Ser/Thr in the SAM\u2011binding loop.\n- Protein methyltransferases (lysine and N\u2011terminal MTases, including SET/NTMT types): activation on acidic residues lining the SAM\u2011binding cavity that position the cofactor and acceptor.\n- Plant small\u2011molecule O\u2011methyltransferases in tocopherol/chlorophyll/sulfolipid pathways: activation on the SAM\u2011binding acidic residue near the N\u2011terminal nucleotide\u2011binding loop.\n- Actinobacterial tailoring enzymes in secondary metabolism (O\u2011methyltransferases and NAD\u2011dependent ketoreductases/epimerases): activation on the acidic cofactor\u2011binding residues of their SAM or NAD(P) sites.",
+      "is_anchor": false,
+      "x": 6.086196422576904,
+      "y": 7.561506748199463
+    },
+    {
+      "key": "2^16:55816",
+      "feature_id": "F55816",
+      "feature_index": 55816,
+      "sae_dim": "2^16",
+      "cosine": 0.13241618871688843,
+      "category": "2^16 feature",
+      "label": "Feature F55816 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.712793827056885,
+      "y": 9.0046968460083
+    },
+    {
+      "key": "2^16:6625",
+      "feature_id": "F6625",
+      "feature_index": 6625,
+      "sae_dim": "2^16",
+      "cosine": 0.1323498636484146,
+      "category": "2^16 feature",
+      "label": "Feature F6625 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.715292453765869,
+      "y": 7.653193473815918
+    },
+    {
+      "key": "2^16:33392",
+      "feature_id": "F33392",
+      "feature_index": 33392,
+      "sae_dim": "2^16",
+      "cosine": 0.1322401911020279,
+      "category": "2^16 feature",
+      "label": "Feature F33392 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.921046257019043,
+      "y": 9.166123390197754
+    },
+    {
+      "key": "2^16:31224",
+      "feature_id": "F31224",
+      "feature_index": 31224,
+      "sae_dim": "2^16",
+      "cosine": 0.13196402788162231,
+      "category": "2^16 feature",
+      "label": "Feature F31224 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.612096786499023,
+      "y": 10.535630226135254
+    },
+    {
+      "key": "2^13:5595",
+      "feature_id": "F5595",
+      "feature_index": 5595,
+      "sae_dim": "2^13",
+      "cosine": 0.13196389377117157,
+      "category": "2^13 feature",
+      "label": "Feature F5595 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.54858112335205,
+      "y": 10.807459831237793
+    },
+    {
+      "key": "2^13:6960",
+      "feature_id": "F6960",
+      "feature_index": 6960,
+      "sae_dim": "2^13",
+      "cosine": 0.13149133324623108,
+      "category": "2^13 feature",
+      "label": "Feature F6960 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.5191426277160645,
+      "y": 9.238078117370605
+    },
+    {
+      "key": "2^16:55841",
+      "feature_id": "F55841",
+      "feature_index": 55841,
+      "sae_dim": "2^16",
+      "cosine": 0.1314564198255539,
+      "category": "2^16 feature",
+      "label": "Feature F55841 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.5858306884765625,
+      "y": 10.847628593444824
+    },
+    {
+      "key": "2^13:6539",
+      "feature_id": "F6539",
+      "feature_index": 6539,
+      "sae_dim": "2^13",
+      "cosine": 0.13003461062908173,
+      "category": "2^13 feature",
+      "label": "Feature F6539 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 10.166622161865234,
+      "y": 9.297953605651855
+    },
+    {
+      "key": "2^14:4732",
+      "feature_id": "F4732",
+      "feature_index": 4732,
+      "sae_dim": "2^14",
+      "cosine": 0.12998954951763153,
+      "category": "Catalytic function",
+      "label": "Acidic active-site catalytic centers",
+      "summary": "Acidic active-site catalytic centers that drive phospho-/nucleotidyl reactions and related ester hydrolyses; the feature highlights Asp/Glu that coordinate catalytic metal ions and/or act as the general base, with adjacent partners (His in HxD/HRD motifs, Lys for nucleotide anchoring, Asn for stabilization). Metal coordination (Mg2+/Mn2+) is common in kinases, phosphatases, nucleases, and nucleotidyl cyclases, but the same acidic pattern can also mark metal-independent Asp-based hydrolases (e.g., hotdog/ACP thioesterases).",
+      "description": "Summary: Acidic active-site catalytic centers that drive phospho-/nucleotidyl reactions and related ester hydrolyses; the feature highlights Asp/Glu that coordinate catalytic metal ions and/or act as the general base, with adjacent partners (His in HxD/HRD motifs, Lys for nucleotide anchoring, Asn for stabilization). Metal coordination (Mg2+/Mn2+) is common in kinases, phosphatases, nucleases, and nucleotidyl cyclases, but the same acidic pattern can also mark metal-independent Asp-based hydrolases (e.g., hotdog/ACP thioesterases).\nActivation pattern: Residue-level peaks on a small set of D/E (with nearby H/K/N) within the catalytic domain; sparse focused clusters marking catalytic and, when applicable, metal-binding positions.\nExemplars: - Ser/Thr and dual-specificity kinases: highlights HRD Asp, DFG Asp, and \u03b23 Lys. - Inositol-1-monophosphatase: highlights metal-chelating D/E. - DEDDh proofreading exonucleases: highlights acidic two-metal center. - Thioesterases (hotdog/ACP): highlights catalytic Asp (and nearby Asn) that activate water for thioester hydrolysis without metals.",
+      "is_anchor": false,
+      "x": 4.9799628257751465,
+      "y": 8.402812004089355
+    },
+    {
+      "key": "2^16:23752",
+      "feature_id": "F23752",
+      "feature_index": 23752,
+      "sae_dim": "2^16",
+      "cosine": 0.12988781929016113,
+      "category": "2^16 feature",
+      "label": "Feature F23752 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.008765697479248,
+      "y": 7.507134437561035
+    },
+    {
+      "key": "2^16:10216",
+      "feature_id": "F10216",
+      "feature_index": 10216,
+      "sae_dim": "2^16",
+      "cosine": 0.12956422567367554,
+      "category": "2^16 feature",
+      "label": "Feature F10216 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.362098693847656,
+      "y": 8.235432624816895
+    },
+    {
+      "key": "2^16:53996",
+      "feature_id": "F53996",
+      "feature_index": 53996,
+      "sae_dim": "2^16",
+      "cosine": 0.12950222194194794,
+      "category": "2^16 feature",
+      "label": "Feature F53996 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.218183517456055,
+      "y": 8.681587219238281
+    },
+    {
+      "key": "2^16:28669",
+      "feature_id": "F28669",
+      "feature_index": 28669,
+      "sae_dim": "2^16",
+      "cosine": 0.12852412462234497,
+      "category": "2^16 feature",
+      "label": "Feature F28669 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.096189975738525,
+      "y": 10.80519962310791
+    },
+    {
+      "key": "2^16:58093",
+      "feature_id": "F58093",
+      "feature_index": 58093,
+      "sae_dim": "2^16",
+      "cosine": 0.12824539840221405,
+      "category": "2^16 feature",
+      "label": "Feature F58093 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.47088623046875,
+      "y": 9.956031799316406
+    },
+    {
+      "key": "2^16:27802",
+      "feature_id": "F27802",
+      "feature_index": 27802,
+      "sae_dim": "2^16",
+      "cosine": 0.12822455167770386,
+      "category": "2^16 feature",
+      "label": "Feature F27802 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.487897872924805,
+      "y": 8.061302185058594
+    },
+    {
+      "key": "2^13:1576",
+      "feature_id": "F1576",
+      "feature_index": 1576,
+      "sae_dim": "2^13",
+      "cosine": 0.12800949811935425,
+      "category": "2^13 feature",
+      "label": "Feature F1576 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 4.913865566253662,
+      "y": 9.014166831970215
+    },
+    {
+      "key": "2^16:27488",
+      "feature_id": "F27488",
+      "feature_index": 27488,
+      "sae_dim": "2^16",
+      "cosine": 0.1260753571987152,
+      "category": "2^16 feature",
+      "label": "Feature F27488 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.600577354431152,
+      "y": 8.85998821258545
+    },
+    {
+      "key": "2^16:55395",
+      "feature_id": "F55395",
+      "feature_index": 55395,
+      "sae_dim": "2^16",
+      "cosine": 0.1250201165676117,
+      "category": "2^16 feature",
+      "label": "Feature F55395 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.338606834411621,
+      "y": 7.932610988616943
+    },
+    {
+      "key": "2^16:56936",
+      "feature_id": "F56936",
+      "feature_index": 56936,
+      "sae_dim": "2^16",
+      "cosine": 0.12425713986158371,
+      "category": "2^16 feature",
+      "label": "Feature F56936 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.307104110717773,
+      "y": 7.823883056640625
+    },
+    {
+      "key": "2^16:30082",
+      "feature_id": "F30082",
+      "feature_index": 30082,
+      "sae_dim": "2^16",
+      "cosine": 0.1238933876156807,
+      "category": "2^16 feature",
+      "label": "Feature F30082 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.20624303817749,
+      "y": 8.90916633605957
+    },
+    {
+      "key": "2^16:25469",
+      "feature_id": "F25469",
+      "feature_index": 25469,
+      "sae_dim": "2^16",
+      "cosine": 0.1232752725481987,
+      "category": "2^16 feature",
+      "label": "Feature F25469 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.677436351776123,
+      "y": 6.751007556915283
+    },
+    {
+      "key": "2^16:52459",
+      "feature_id": "F52459",
+      "feature_index": 52459,
+      "sae_dim": "2^16",
+      "cosine": 0.1230010986328125,
+      "category": "2^16 feature",
+      "label": "Feature F52459 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.974334716796875,
+      "y": 8.327193260192871
+    },
+    {
+      "key": "2^16:57714",
+      "feature_id": "F57714",
+      "feature_index": 57714,
+      "sae_dim": "2^16",
+      "cosine": 0.12255532294511795,
+      "category": "2^16 feature",
+      "label": "Feature F57714 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.987200736999512,
+      "y": 6.719203948974609
+    },
+    {
+      "key": "2^16:49361",
+      "feature_id": "F49361",
+      "feature_index": 49361,
+      "sae_dim": "2^16",
+      "cosine": 0.12232113629579544,
+      "category": "2^16 feature",
+      "label": "Feature F49361 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.3947601318359375,
+      "y": 10.56879997253418
+    },
+    {
+      "key": "2^16:30090",
+      "feature_id": "F30090",
+      "feature_index": 30090,
+      "sae_dim": "2^16",
+      "cosine": 0.12201379984617233,
+      "category": "2^16 feature",
+      "label": "Feature F30090 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.832029819488525,
+      "y": 10.691044807434082
+    },
+    {
+      "key": "2^16:4667",
+      "feature_id": "F4667",
+      "feature_index": 4667,
+      "sae_dim": "2^16",
+      "cosine": 0.12124218791723251,
+      "category": "2^16 feature",
+      "label": "Feature F4667 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 10.24064826965332,
+      "y": 9.341808319091797
+    },
+    {
+      "key": "2^16:32805",
+      "feature_id": "F32805",
+      "feature_index": 32805,
+      "sae_dim": "2^16",
+      "cosine": 0.121121846139431,
+      "category": "2^16 feature",
+      "label": "Feature F32805 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.887383937835693,
+      "y": 7.381201267242432
+    },
+    {
+      "key": "2^16:630",
+      "feature_id": "F630",
+      "feature_index": 630,
+      "sae_dim": "2^16",
+      "cosine": 0.12106522917747498,
+      "category": "2^16 feature",
+      "label": "Feature F630 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.305668354034424,
+      "y": 9.8609037399292
+    },
+    {
+      "key": "2^16:58960",
+      "feature_id": "F58960",
+      "feature_index": 58960,
+      "sae_dim": "2^16",
+      "cosine": 0.12041395157575607,
+      "category": "2^16 feature",
+      "label": "Feature F58960 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.757585525512695,
+      "y": 9.537698745727539
+    },
+    {
+      "key": "2^16:43451",
+      "feature_id": "F43451",
+      "feature_index": 43451,
+      "sae_dim": "2^16",
+      "cosine": 0.12001831829547882,
+      "category": "2^16 feature",
+      "label": "Feature F43451 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 4.717695236206055,
+      "y": 8.604416847229004
+    },
+    {
+      "key": "2^16:13361",
+      "feature_id": "F13361",
+      "feature_index": 13361,
+      "sae_dim": "2^16",
+      "cosine": 0.11984998732805252,
+      "category": "2^16 feature",
+      "label": "Feature F13361 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.882099628448486,
+      "y": 7.483745574951172
+    },
+    {
+      "key": "2^14:4569",
+      "feature_id": "F4569",
+      "feature_index": 4569,
+      "sae_dim": "2^14",
+      "cosine": 0.1196552962064743,
+      "category": "Catalytic function",
+      "label": "DFG-like activation-loop triad",
+      "summary": "Activation of the activation-loop gatekeeper triad in protein kinase-fold domains\u2014recognizing canonical DFG and close variants (DLG/DYG/DWG) as well as pseudokinase swaps occupying the same position (e.g., GFE in MLKL)\u2014across Ser/Thr, Tyr, dual-specificity, bacterial eSTKs, viral kinases, and kinase-like/pseudokinases.",
+      "description": "Summary: Activation of the activation-loop gatekeeper triad in protein kinase-fold domains\u2014recognizing canonical DFG and close variants (DLG/DYG/DWG) as well as pseudokinase swaps occupying the same position (e.g., GFE in MLKL)\u2014across Ser/Thr, Tyr, dual-specificity, bacterial eSTKs, viral kinases, and kinase-like/pseudokinases.\nActivation pattern: Short, highly localized windows with residue-level peaks over the triad (often G/F-enriched; acidic position can be D or E), with spillover to the following Ser/Thr/polar residue; located in the flexible activation segment; multiple peaks possible in multi-kinase-like proteins.\nExemplars: Include pseudokinases (e.g., MLKL) where the feature targets a GFE-type activation-loop triad analogous to DFG.",
+      "is_anchor": false,
+      "x": 6.192610263824463,
+      "y": 6.998023509979248
+    },
+    {
+      "key": "2^16:15910",
+      "feature_id": "F15910",
+      "feature_index": 15910,
+      "sae_dim": "2^16",
+      "cosine": 0.1195068210363388,
+      "category": "2^16 feature",
+      "label": "Feature F15910 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.440743923187256,
+      "y": 6.664783954620361
+    },
+    {
+      "key": "2^16:11169",
+      "feature_id": "F11169",
+      "feature_index": 11169,
+      "sae_dim": "2^16",
+      "cosine": 0.11924979835748672,
+      "category": "2^16 feature",
+      "label": "Feature F11169 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.244819164276123,
+      "y": 7.560149669647217
+    },
+    {
+      "key": "2^13:4764",
+      "feature_id": "F4764",
+      "feature_index": 4764,
+      "sae_dim": "2^13",
+      "cosine": 0.11894895136356354,
+      "category": "2^13 feature",
+      "label": "Feature F4764 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.281243324279785,
+      "y": 8.81549072265625
+    },
+    {
+      "key": "2^16:54563",
+      "feature_id": "F54563",
+      "feature_index": 54563,
+      "sae_dim": "2^16",
+      "cosine": 0.11863132566213608,
+      "category": "2^16 feature",
+      "label": "Feature F54563 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.287884712219238,
+      "y": 7.275101184844971
+    },
+    {
+      "key": "2^16:18056",
+      "feature_id": "F18056",
+      "feature_index": 18056,
+      "sae_dim": "2^16",
+      "cosine": 0.11847452074289322,
+      "category": "2^16 feature",
+      "label": "Feature F18056 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.511712074279785,
+      "y": 8.575695991516113
+    },
+    {
+      "key": "2^16:50613",
+      "feature_id": "F50613",
+      "feature_index": 50613,
+      "sae_dim": "2^16",
+      "cosine": 0.11815597862005234,
+      "category": "2^16 feature",
+      "label": "Feature F50613 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.016878128051758,
+      "y": 10.940546989440918
+    },
+    {
+      "key": "2^16:8280",
+      "feature_id": "F8280",
+      "feature_index": 8280,
+      "sae_dim": "2^16",
+      "cosine": 0.11778741329908371,
+      "category": "2^16 feature",
+      "label": "Feature F8280 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.369264602661133,
+      "y": 9.30691909790039
+    },
+    {
+      "key": "2^14:5583",
+      "feature_id": "F5583",
+      "feature_index": 5583,
+      "sae_dim": "2^14",
+      "cosine": 0.11737077683210373,
+      "category": "Structural motif",
+      "label": "Conserved HTH aromatic residue",
+      "summary": "Conserved residue within the DNA-binding helix\u2013turn\u2013helix (HTH) motif of bacterial transcription regulators, typically an aromatic/bulky hydrophobic residue (His, Tyr, or Phe) embedded in the recognition-helix scaffold of the HTH DNA-binding domain.",
+      "description": "Summary: Conserved residue within the DNA-binding helix\u2013turn\u2013helix (HTH) motif of bacterial transcription regulators, typically an aromatic/bulky hydrophobic residue (His, Tyr, or Phe) embedded in the recognition-helix scaffold of the HTH DNA-binding domain.\nActivation pattern: Predominantly single, sharp residue-level peaks within the HTH motif of the DNA-binding domain. The peak appears in the N-terminal region for regulators with N-terminal HTH domains (e.g., LysR, MarR/TetR, ArsR/SmtB, Lrp/AsnC, LacI) and in mid/C-terminal regions for regulators with C-terminal HTH domains (e.g., LuxR, two-component response regulators, NtrC-like proteins).\nExemplars: - LysR-type transcriptional activators: single peak within the N-terminal HTH motif (e.g., His/Tyr at the conserved hydrophobic position).\n- LuxR-type quorum-sensing regulators (e.g., EsaR, RamA): peak within the C-terminal HTH.\n- MarR/SlyA family repressors (e.g., SlyA, TcaR): peak within the winged HTH DNA-binding domain.\n- ArsR/SmtB metal-response repressors: peak within the N-terminal HTH DNA-binding domain.\n- Lrp/AsnC family regulators: peak in the N-terminal HTH motif.\n- Two-component response regulators (e.g., SsrB): peak in the C-terminal HTH.\n- NtrC-like \u03c354-dependent enhancer-binding proteins (e.g., ZraR): peak in the C-terminal HTH.\n- LacI/CCR regulators (e.g., CcpA): peak in the N-terminal HTH motif.",
+      "is_anchor": false,
+      "x": 5.453603267669678,
+      "y": 9.103958129882812
+    },
+    {
+      "key": "2^16:31268",
+      "feature_id": "F31268",
+      "feature_index": 31268,
+      "sae_dim": "2^16",
+      "cosine": 0.11736998707056046,
+      "category": "2^16 feature",
+      "label": "Feature F31268 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.957103252410889,
+      "y": 8.285189628601074
+    },
+    {
+      "key": "2^16:52869",
+      "feature_id": "F52869",
+      "feature_index": 52869,
+      "sae_dim": "2^16",
+      "cosine": 0.11708351224660873,
+      "category": "2^16 feature",
+      "label": "Feature F52869 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.511046409606934,
+      "y": 8.821711540222168
+    },
+    {
+      "key": "2^16:57287",
+      "feature_id": "F57287",
+      "feature_index": 57287,
+      "sae_dim": "2^16",
+      "cosine": 0.11659841239452362,
+      "category": "2^16 feature",
+      "label": "Feature F57287 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.097911357879639,
+      "y": 9.347708702087402
+    },
+    {
+      "key": "2^16:39854",
+      "feature_id": "F39854",
+      "feature_index": 39854,
+      "sae_dim": "2^16",
+      "cosine": 0.11651283502578735,
+      "category": "2^16 feature",
+      "label": "Feature F39854 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.259982109069824,
+      "y": 10.09596061706543
+    },
+    {
+      "key": "2^16:1044",
+      "feature_id": "F1044",
+      "feature_index": 1044,
+      "sae_dim": "2^16",
+      "cosine": 0.11562713980674744,
+      "category": "2^16 feature",
+      "label": "Feature F1044 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.515960693359375,
+      "y": 7.1615986824035645
+    },
+    {
+      "key": "2^16:55741",
+      "feature_id": "F55741",
+      "feature_index": 55741,
+      "sae_dim": "2^16",
+      "cosine": 0.11546339839696884,
+      "category": "2^16 feature",
+      "label": "Feature F55741 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.693019390106201,
+      "y": 7.772138595581055
+    },
+    {
+      "key": "2^16:38066",
+      "feature_id": "F38066",
+      "feature_index": 38066,
+      "sae_dim": "2^16",
+      "cosine": 0.1152351051568985,
+      "category": "2^16 feature",
+      "label": "Feature F38066 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.846206665039062,
+      "y": 9.979280471801758
+    },
+    {
+      "key": "2^16:18568",
+      "feature_id": "F18568",
+      "feature_index": 18568,
+      "sae_dim": "2^16",
+      "cosine": 0.11521288007497787,
+      "category": "2^16 feature",
+      "label": "Feature F18568 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.3018903732299805,
+      "y": 10.600152969360352
+    },
+    {
+      "key": "2^16:40898",
+      "feature_id": "F40898",
+      "feature_index": 40898,
+      "sae_dim": "2^16",
+      "cosine": 0.11512357741594315,
+      "category": "2^16 feature",
+      "label": "Feature F40898 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.651215076446533,
+      "y": 7.0941619873046875
+    },
+    {
+      "key": "2^14:4970",
+      "feature_id": "F4970",
+      "feature_index": 4970,
+      "sae_dim": "2^14",
+      "cosine": 0.11487552523612976,
+      "category": "Structural motif",
+      "label": "Helix N-cap turns",
+      "summary": "Short coil/turn motifs that cap or connect alpha-helices (helix-boundary \u201ccapping\u201d sites), especially N-cap positions enriched for polar/charged residues (Ser/Thr/Asn/Gln with nearby Lys/Arg/Asp/Glu and occasional Gly/Pro), occurring in cytosolic loops of membrane proteins and in sensory/regulatory alpha-helical domains (e.g., PAS/LOV, HTH/homeobox)",
+      "description": "Summary: Short coil/turn motifs that cap or connect alpha-helices (helix-boundary \u201ccapping\u201d sites), especially N-cap positions enriched for polar/charged residues (Ser/Thr/Asn/Gln with nearby Lys/Arg/Asp/Glu and occasional Gly/Pro), occurring in cytosolic loops of membrane proteins and in sensory/regulatory alpha-helical domains (e.g., PAS/LOV, HTH/homeobox)\nActivation pattern: Residue-level peaks on single positions or very short adjacent clusters located in coils/turns at helix boundaries (often the N-cap of the following helix). Peaks recur wherever such helix-capping turns appear; positions map to mid-sequence cytosolic loops in bacterial permeases and to PAS/HTH domains later in large eukaryotic proteins.\nExemplars: - ABC transporter permeases and drug/solute exporters: activation at cytoplasmic loop residues that N-cap or precede a transmembrane alpha-helix.\n- Cell division protein FtsX: lysine in a short cytosolic loop just before a transmembrane helix (helix-boundary/cap site).\n- PAS-domain sensors/regulators: \n  \u2022 Voltage-gated K+ channel (EAG) PAS: N-cap/turn residue between PAS helices. \n  \u2022 Diguanylate cyclases (c-di-GMP signaling): Ser/Thr in PAS helical linkers. \n  \u2022 cAMP-specific phosphodiesterases (e.g., PDE8A): Gln in a PAS coil between helices. \n  \u2022 Two-component histidine kinases/blue-light LOV sensors: analogous PAS/LOV helix-turn capping positions.\n- Homeobox/HTH DNA-binding transcription factors: residues in the helix\u2013turn\u2013helix linker that cap/bridge adjacent helices within the DNA-binding domain.\n- ABCA/ABCG eukaryotic transporters: cytosolic loop capping residues at the starts of transmembrane helices.",
+      "is_anchor": false,
+      "x": 7.523749828338623,
+      "y": 10.816838264465332
+    },
+    {
+      "key": "2^16:45532",
+      "feature_id": "F45532",
+      "feature_index": 45532,
+      "sae_dim": "2^16",
+      "cosine": 0.11455485969781876,
+      "category": "2^16 feature",
+      "label": "Feature F45532 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.421188354492188,
+      "y": 7.534925937652588
+    },
+    {
+      "key": "2^14:15859",
+      "feature_id": "F15859",
+      "feature_index": 15859,
+      "sae_dim": "2^14",
+      "cosine": 0.11367848515510559,
+      "category": "Structural motif",
+      "label": "WD propeller E-to-coil motif",
+      "summary": "Structural signature of WD-repeat beta-propellers: single, blade-internal positions at the end of a beta-strand that immediately precedes the loop/turn (E\u2192coil junction), often adjacent to the canonical WD dipeptide and enriched for small/polar residues (G/S/T/D), across diverse eukaryotic WDR scaffolds",
+      "description": "Summary: Structural signature of WD-repeat beta-propellers: single, blade-internal positions at the end of a beta-strand that immediately precedes the loop/turn (E\u2192coil junction), often adjacent to the canonical WD dipeptide and enriched for small/polar residues (G/S/T/D), across diverse eukaryotic WDR scaffolds\nActivation pattern: Residue-level peaks; typically one (sometimes a few) per WD blade within the high-confidence beta-sheet core; strongest on the last residue(s) of an E strand right before a loop, with occasional spillover to the first coil residue; minimal to absent in helices, disordered termini, and non-WD regions; recurrent glycine/serine/threonine/aspartate and occasional hits on the W or D of the WD motif\nExemplars: - Cilia/flagella-associated WDRs (e.g., CFAP/IFT WDRs): repeated spikes at strand termini in successive blades, sometimes at the W preceding the D of the WD motif\n- U3 snoRNP/SSU processome WD proteins: discrete E\u2192coil edge residues per blade across the WD domain\n- Trm734 (WD beta-propeller regulator of tRNA methyltransferase): many blades marked by G/S/T on E-strand termini\n- GID complex subunit 7 (E3 ligase adaptor): one hotspot per annotated WD repeat, mostly on beta-strand ends\n- APC/C co-activators (CDC20/AMA1 family): silent disordered N-termini; activation restricted to WD-core strand-end residues across blades\n- LST8 (mTOR complex subunit): distinct peaks on each WD blade at the final E residue before the loop",
+      "is_anchor": false,
+      "x": 9.277188301086426,
+      "y": 7.312613010406494
+    },
+    {
+      "key": "2^13:7356",
+      "feature_id": "F7356",
+      "feature_index": 7356,
+      "sae_dim": "2^13",
+      "cosine": 0.11344274878501892,
+      "category": "2^13 feature",
+      "label": "Feature F7356 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.234520435333252,
+      "y": 6.99669885635376
+    },
+    {
+      "key": "2^14:3367",
+      "feature_id": "F3367",
+      "feature_index": 3367,
+      "sae_dim": "2^14",
+      "cosine": 0.11338183283805847,
+      "category": "Structural motif",
+      "label": "PAS sensor relay residues",
+      "summary": "PAS-family sensory domains (including LOV and phytochrome PAS) \u2014 conserved polar helix\u2011capping/core relay positions (Asn/Ser/Thr/Asp) that transmit sensor-state changes rather than binding cofactors, recurring in N\u2011terminal PAS modules that regulate diverse signaling effectors (histidine kinases, ion channels, and nucleotide/c\u2011di\u2011GMP enzymes)",
+      "description": "Summary: PAS-family sensory domains (including LOV and phytochrome PAS) \u2014 conserved polar helix\u2011capping/core relay positions (Asn/Ser/Thr/Asp) that transmit sensor-state changes rather than binding cofactors, recurring in N\u2011terminal PAS modules that regulate diverse signaling effectors (histidine kinases, ion channels, and nucleotide/c\u2011di\u2011GMP enzymes)\nActivation pattern: Residue-level peaks, typically multiple per protein, concentrated in N\u2011terminal PAS/LOV domains; strongest on polar residues at \u03b2\u2013\u03b1 junctions/helix N\u2011caps and adjacent core positions; minimal or absent in catalytic/ATP\u2011binding regions and at cofactor/ligand-contact residues; in large photoreceptors, additional peaks in later PAS units\nExemplars: - Two-component and hybrid histidine kinases: activation on conserved polar residues within N\u2011terminal PAS sensors that couple to HisKA/CA domains; often multiple PAS repeats\n- LOV-domain photoreceptors (phototropins): sharp peaks on isolated serines in LOV/PAS cores near helix starts; avoids FMN-adduct and FMN\u2011binding residues and the downstream AGC/Ser\u2011Thr kinase catalytic sites\n- Phytochromes: activation in PAS units of the PAS\u2013GAF\u2013PHY sensory module at non\u2011bilin\u2011contact relay positions\n- Gas/redox PAS sensors (e.g., FixL/Dos, Aer2/HemAT): peaks in PAS cores near helical caps that transmit heme/redox state, excluding the heme\u2011coordinating pocket\n- c-di-GMP and cyclic nucleotide signaling proteins (GGDEF/EAL/HD-GYP, cyclases/phosphodiesterases): activation in the PAS sensors fused N\u2011terminally to these enzymes\n- Voltage-gated K+ channels of the KCNH (EAG/ERG/ELK) family: activation in the cytosolic N\u2011terminal PAS (eag) domain at polar relay sites\n- Chemotaxis/transducer proteins: activation within cytosolic PAS sensory modules that feed into HAMP/transducer scaffolds\n- Eukaryotic hybrid histidine kinases: similar PAS\u2011sensor polar hotspots preceding the kinase core\n- Plant HD-ZIP transcription factors (not primary drivers): occasional weak activation in N\u2011terminal regulatory helices bearing PAS\u2011like helix\u2011capping polar motifs",
+      "is_anchor": false,
+      "x": 9.3453950881958,
+      "y": 7.971338748931885
+    },
+    {
+      "key": "2^16:22711",
+      "feature_id": "F22711",
+      "feature_index": 22711,
+      "sae_dim": "2^16",
+      "cosine": 0.11331436783075333,
+      "category": "2^16 feature",
+      "label": "Feature F22711 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.8449625968933105,
+      "y": 10.358558654785156
+    },
+    {
+      "key": "2^16:41120",
+      "feature_id": "F41120",
+      "feature_index": 41120,
+      "sae_dim": "2^16",
+      "cosine": 0.11301582306623459,
+      "category": "2^16 feature",
+      "label": "Feature F41120 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.2758283615112305,
+      "y": 9.139875411987305
+    },
+    {
+      "key": "2^14:3545",
+      "feature_id": "F3545",
+      "feature_index": 3545,
+      "sae_dim": "2^14",
+      "cosine": 0.11296246200799942,
+      "category": "Structural motif",
+      "label": "Beta-alpha junction polar motif",
+      "summary": "A coil/\u03b2-strand-to-helix junction signal: the feature activates on short polar/acidic residue clusters (enriched for Ser/Thr/Asn/Asp) at the end of \u03b2-strands and the immediately following loop, often at or near the start of a downstream \u03b1-helix. This is a generic structural motif used across many folds and families, not restricted to any one function.",
+      "description": "Summary: A coil/\u03b2-strand-to-helix junction signal: the feature activates on short polar/acidic residue clusters (enriched for Ser/Thr/Asn/Asp) at the end of \u03b2-strands and the immediately following loop, often at or near the start of a downstream \u03b1-helix. This is a generic structural motif used across many folds and families, not restricted to any one function.\nActivation pattern: Residue-level peaks in short 1\u20133 residue clusters centered on \u03b2\u2192loop\u2192\u03b1 transitions; the dominant maximum is typically on a Ser/Thr/Asn at the terminal strand residue or the following loop residue, with weaker secondary peaks at homologous junctions elsewhere in the same protein. Multiple such peaks recur per protein (moderate counts), rarely coincident with annotated catalytic sites.\nExemplars: - LacI-family HTH-type transcriptional regulators (TreR, FruR/Cra, PtxS, PurR, KdgR): dominant peak on a Ser/Asn near residue ~240\u2013255 at the end of a \u03b2-strand within the C-terminal effector/regulatory (ligand-binding) domain, with weaker secondary peaks at analogous junctions around residues ~130 and ~165\u2013170.\n- D-inositol 3-phosphate glycosyltransferases (GT-B fold): strong activation on Thr in \u03b2\u2192\u03b1 linkers of the donor/acceptor-binding region, with a secondary peak near an inositol-phosphate-binding Tyr.\n- Processive diacylglycerol \u03b1-glucosyltransferases: dominant peak on a Thr in the coil preceding a helix, extending into the first one or two helical residues.\n- GDP-mannose-dependent mannosyltransferases (GT-A/GT-B fold): peaks on loop residues immediately before helices (multiple \u03b2\u2192\u03b1 junctions highlighted).\n- ATP-dependent helicases (DNA/RNA): activation on coil segments transitioning into helices within the core helicase domains, sometimes proximal to but not overlapping Walker/P-loop or DEAH motifs.",
+      "is_anchor": false,
+      "x": 8.684416770935059,
+      "y": 7.521325588226318
+    },
+    {
+      "key": "2^14:10289",
+      "feature_id": "F10289",
+      "feature_index": 10289,
+      "sae_dim": "2^14",
+      "cosine": 0.1124892309308052,
+      "category": "Ligand-binding site",
+      "label": "Ser/Thr phosphate-binding loops",
+      "summary": "Ser/Thr-centered sites in phosphate-binding loops and catalytic-domain motifs of nucleotide- and nucleic-acid\u2013handling enzymes (Walker A/P-loop\u2013like and analogous motifs such as the histidine\u2011kinase HisKA/HATPase_c regions including the ATP-lid G-boxes, PRPP/PLP loops, NAD(P)/FAD phosphate-recognition, and RNA/DNA phosphate-binding loops in nucleic-acid enzymes).",
+      "description": "Summary: Ser/Thr-centered sites in phosphate-binding loops and catalytic-domain motifs of nucleotide- and nucleic-acid\u2013handling enzymes (Walker A/P-loop\u2013like and analogous motifs such as the histidine\u2011kinase HisKA/HATPase_c regions including the ATP-lid G-boxes, PRPP/PLP loops, NAD(P)/FAD phosphate-recognition, and RNA/DNA phosphate-binding loops in nucleic-acid enzymes).\nActivation pattern: Residue-level peaks on Ser/Thr within short, flexible loops and coil\u2013helix/strand junctions inside cytosolic catalytic domains, often near phosphate-cradling glycine-rich motifs. Little/no signal in transmembrane segments or distal structural helices such as HPt; footprint size varies from single residues to short patches. Frequently overlaps ATP/NTP-binding loops (Walker A/P-loop), the GHKL/HATPase_c ATP-lid/G-box and adjacent HisKA elements of histidine kinases, PRPP/PLP and NAD(P)/FAD phosphate-binding loops, and nucleic-acid phosphate\u2013contacting loops.\nExemplars:\n- Two-component sensor histidine kinases: activation distributed across the cytosolic Histidine kinase domain, including conserved Ser/Thr in HisKA (RTPLNG-type context) and G-boxes of the HATPase_c ATP-lid; absent in transmembranes and HPt helices.\n- CRISPR-associated Cas3 helicase/nuclease and ATP-dependent RNA helicases: peaks within helicase ATP-binding domains (Walker A\u2013adjacent loops and coil\u2013helix junctions), not at distal nuclease motifs.\n- Uracil phosphoribosyltransferase (UPRTase): focused activation on the PRPP-binding loop/helix junction.\n- DNA/RNA polymerases: activation on NTP-binding loop elements that position the triphosphate.\n- PLP-dependent sulfur\u2013amino-acid enzymes: peaks on the PLP phosphate-binding loop.\n- Protein tyrosine/dual-specificity phosphatases and SAM-dependent methyltransferases (NSUN/SET): activation on small phosphate-/nucleotide-adjacent catalytic loops (often centered on catalytic Cys).\n- tRNA pseudouridine synthase B (TruB/Pus): activation on loops that contact the RNA phosphodiester backbone near the catalytic site.",
+      "is_anchor": false,
+      "x": 9.305937767028809,
+      "y": 10.022488594055176
+    },
+    {
+      "key": "2^16:28681",
+      "feature_id": "F28681",
+      "feature_index": 28681,
+      "sae_dim": "2^16",
+      "cosine": 0.11243508756160736,
+      "category": "2^16 feature",
+      "label": "Feature F28681 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.49056625366211,
+      "y": 10.025284767150879
+    },
+    {
+      "key": "2^16:37598",
+      "feature_id": "F37598",
+      "feature_index": 37598,
+      "sae_dim": "2^16",
+      "cosine": 0.112386554479599,
+      "category": "2^16 feature",
+      "label": "Feature F37598 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.460753917694092,
+      "y": 6.946994781494141
+    },
+    {
+      "key": "2^16:40424",
+      "feature_id": "F40424",
+      "feature_index": 40424,
+      "sae_dim": "2^16",
+      "cosine": 0.11214590072631836,
+      "category": "2^16 feature",
+      "label": "Feature F40424 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.335192680358887,
+      "y": 9.332924842834473
+    },
+    {
+      "key": "2^16:4318",
+      "feature_id": "F4318",
+      "feature_index": 4318,
+      "sae_dim": "2^16",
+      "cosine": 0.11202351003885269,
+      "category": "2^16 feature",
+      "label": "Feature F4318 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.418926239013672,
+      "y": 8.3566312789917
+    },
+    {
+      "key": "2^16:39868",
+      "feature_id": "F39868",
+      "feature_index": 39868,
+      "sae_dim": "2^16",
+      "cosine": 0.11193715780973434,
+      "category": "2^16 feature",
+      "label": "Feature F39868 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.871365547180176,
+      "y": 7.0543389320373535
+    },
+    {
+      "key": "2^14:2551",
+      "feature_id": "F2551",
+      "feature_index": 2551,
+      "sae_dim": "2^14",
+      "cosine": 0.11141790449619293,
+      "category": "Ligand-binding site",
+      "label": "Walker A P-loop motif",
+      "summary": "Walker A (P-loop) phosphate-binding loop of P-loop NTPases\u2014most prominently the ABC transporter nucleotide-binding domains\u2014recognizing the glycine-rich GxxxxGKS/T motif in the beta1\u2013alpha1 loop that coordinates ATP; often accompanied by a nearby downstream Q-loop glutamine in ABC NBDs",
+      "description": "Summary: Walker A (P-loop) phosphate-binding loop of P-loop NTPases\u2014most prominently the ABC transporter nucleotide-binding domains\u2014recognizing the glycine-rich GxxxxGKS/T motif in the beta1\u2013alpha1 loop that coordinates ATP; often accompanied by a nearby downstream Q-loop glutamine in ABC NBDs\nActivation pattern: Residue-level peaks in a short 4\u20136 aa window focused on the central glycine(s) and invariant lysine of the GK-centered P-loop; localized to a flexible coil between a beta-strand and an alpha-helix; frequently appears once per NBD and thus twice in full-length eukaryotic ABC transporters; occasional weaker secondary peak at a downstream conserved glutamine (Q-loop)\nExemplars: - Energy-coupling factor (ECF) transporter ATP-binding subunit: activation on the Walker A motif (e.g., TGSGKST) within the ABC NBD; minor downstream Q-loop signal.\n- Hydrophilic-compound importer (BacA-type) ABC ATPase: strong activation on the P-loop in the C-terminal NBD.\n- Peptide exporter ABC ATPase (YydI-type): early N-terminal NBD P-loop peak preceding an alpha-helix.\n- Vi polysaccharide exporter ABC ATPase (VexC-type): activation on the glycine-rich P-loop in the ABC domain.\n- Cytochrome c biogenesis ABC ATPase (CcmA): sharp peak on the P-loop connecting beta to alpha.\n- Bacterial ABC ATPase subunit (generic): primary P-loop peak with a weaker downstream Q-loop signal.\n- ABCD family (peroxisomal) transporter: activation on the GPSGSGK Walker A sequence in the NBD.\n- ABCC family (MRP/CFTR-like) transporter: two distinct P-loop activations, one in each NBD (e.g., GAVGSGKS and GRTGSGKS).\n- ABCG family half-transporter: localized activation on the canonical Walker A loop within the NBD.",
+      "is_anchor": false,
+      "x": 5.555852890014648,
+      "y": 9.451913833618164
+    },
+    {
+      "key": "2^16:15004",
+      "feature_id": "F15004",
+      "feature_index": 15004,
+      "sae_dim": "2^16",
+      "cosine": 0.11087890714406967,
+      "category": "2^16 feature",
+      "label": "Feature F15004 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.127514839172363,
+      "y": 7.827904224395752
+    },
+    {
+      "key": "2^16:5406",
+      "feature_id": "F5406",
+      "feature_index": 5406,
+      "sae_dim": "2^16",
+      "cosine": 0.1107841357588768,
+      "category": "2^16 feature",
+      "label": "Feature F5406 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.047586441040039,
+      "y": 9.816080093383789
+    },
+    {
+      "key": "2^16:42483",
+      "feature_id": "F42483",
+      "feature_index": 42483,
+      "sae_dim": "2^16",
+      "cosine": 0.11072859913110733,
+      "category": "2^16 feature",
+      "label": "Feature F42483 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.865106582641602,
+      "y": 7.511924743652344
+    },
+    {
+      "key": "2^16:46450",
+      "feature_id": "F46450",
+      "feature_index": 46450,
+      "sae_dim": "2^16",
+      "cosine": 0.1106642633676529,
+      "category": "2^16 feature",
+      "label": "Feature F46450 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.209019660949707,
+      "y": 8.6317777633667
+    },
+    {
+      "key": "2^16:28046",
+      "feature_id": "F28046",
+      "feature_index": 28046,
+      "sae_dim": "2^16",
+      "cosine": 0.11029313504695892,
+      "category": "2^16 feature",
+      "label": "Feature F28046 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.638883590698242,
+      "y": 6.91954231262207
+    },
+    {
+      "key": "2^14:7416",
+      "feature_id": "F7416",
+      "feature_index": 7416,
+      "sae_dim": "2^14",
+      "cosine": 0.10998772084712982,
+      "category": "Ligand-binding site",
+      "label": "Glycine-rich active-site loops",
+      "summary": "Conserved functional loop/turn residues at catalytic and ligand-binding sites\u2014especially glycine-rich ATP/phosphate-binding loops and neighboring acidic (Asp/Glu) catalytic residues\u2014more generally short coils at secondary-structure junctions that line binding pockets across regulatory and transport proteins",
+      "description": "Summary: Conserved functional loop/turn residues at catalytic and ligand-binding sites\u2014especially glycine-rich ATP/phosphate-binding loops and neighboring acidic (Asp/Glu) catalytic residues\u2014more generally short coils at secondary-structure junctions that line binding pockets across regulatory and transport proteins\nActivation pattern: Sharp residue-level peaks within structured domains; enriched on glycines and Asp/Glu in coils/turns adjacent to helices/\u03b2-strands; minimal in signal peptides, disordered/low-complexity regions, and long regular helices/strands, with occasional peaks on immediately adjacent strand residues\nExemplars: - Protein kinases (bacterial/eukaryotic-like): activates on the glycine-rich ATP-binding loop (GXGXXG/Gly-loop) and the catalytic Asp region (e.g., HRD/DFG vicinity), plus nearby structured loops (as seen in SepH).\n- ABC transporter NBDs: activates on Walker A P-loop (GxxxxGKS/T), Walker B acidic motif (hhhhDE), and switch/H-loop elements involved in ATP hydrolysis.\n- RNA helicases (DEAD/DEAH-box): activates on the Walker/P-loop NTPase motifs and the DEAD/DEAH acidic motif within the helicase core.\n- Two-component systems: in histidine kinases, on HATPase_c nucleotide-binding loops (N, G1, G2 boxes); in response regulators, on the conserved active-site Asp and adjoining loops of the receiver domain.\n- HTH-type transcriptional regulators (e.g., LysR-like): activates on loop/turn residues in the central effector-binding domain (with stereotyped peaks near acidic and glycine residues) and on a loop within the N-terminal HTH region; often glycine/acidic-enriched.\n- Periplasmic solute-binding proteins: activates on short coil segments flanking \u03b2/helix transitions that shape the substrate-binding cleft, with occasional peaks on adjacent strand residues.",
+      "is_anchor": false,
+      "x": 5.298151016235352,
+      "y": 7.467946529388428
+    },
+    {
+      "key": "2^16:32634",
+      "feature_id": "F32634",
+      "feature_index": 32634,
+      "sae_dim": "2^16",
+      "cosine": 0.10961054265499115,
+      "category": "2^16 feature",
+      "label": "Feature F32634 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.278752326965332,
+      "y": 7.485973834991455
+    },
+    {
+      "key": "2^16:50787",
+      "feature_id": "F50787",
+      "feature_index": 50787,
+      "sae_dim": "2^16",
+      "cosine": 0.10890138894319534,
+      "category": "2^16 feature",
+      "label": "Feature F50787 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.0349907875061035,
+      "y": 6.78195333480835
+    },
+    {
+      "key": "2^16:28337",
+      "feature_id": "F28337",
+      "feature_index": 28337,
+      "sae_dim": "2^16",
+      "cosine": 0.10867253690958023,
+      "category": "2^16 feature",
+      "label": "Feature F28337 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.774892330169678,
+      "y": 8.995328903198242
+    },
+    {
+      "key": "2^16:31724",
+      "feature_id": "F31724",
+      "feature_index": 31724,
+      "sae_dim": "2^16",
+      "cosine": 0.10848887264728546,
+      "category": "2^16 feature",
+      "label": "Feature F31724 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.07153034210205,
+      "y": 8.695858001708984
+    },
+    {
+      "key": "2^14:3109",
+      "feature_id": "F3109",
+      "feature_index": 3109,
+      "sae_dim": "2^14",
+      "cosine": 0.10840215533971786,
+      "category": "Ligand-binding site",
+      "label": "Ca2+-coordinating acidic residues",
+      "summary": "Ca2+-coordinating acidic residues in Ca2+-binding motifs\u2014most strongly the canonical terminal bidentate Glu at position 12 of EF-hand loops\u2014also including other Ca2+-ligating acidic sites (e.g., calpain/C2-like acidic clusters and channel/filter acidic motifs), plus nearby helix\u2013loop\u2013helix context where present.",
+      "description": "Summary: Ca2+-coordinating acidic residues in Ca2+-binding motifs\u2014most strongly the canonical terminal bidentate Glu at position 12 of EF-hand loops\u2014also including other Ca2+-ligating acidic sites (e.g., calpain/C2-like acidic clusters and channel/filter acidic motifs), plus nearby helix\u2013loop\u2013helix context where present.\nActivation pattern: Sharp, sparse residue-level peaks, typically one per Ca2+-binding site (repeating across tandem EF-hands within a protein); activations fall on acidic ligands (Glu, occasionally Asp) within EF-hand loops or other Ca2+-binding loops/short helices; weaker, sporadic peaks can appear on acidic residues in structured regions even without explicit EF-hand annotation.\nExemplars:\n- Calbindin/calmodulin-like EF-hand proteins: peaks mark the Ca2+-coordinating Glu within multiple EF-hands.\n- NADPH oxidase EF-hand\u2013containing regulatory subunits: peaks on Asp/Glu within the two EF-hand motifs, including annotated Ca2+-binding sites.\n- CDPK/CDPK-related kinases: strong peaks at the Ca2+-ligating Glu within each EF-hand of the C-terminal cluster; little activation in kinase/autoinhibitory regions.\n- MCFD2-like two-EF-hand cofactors: precise peaks at the Ca2+-coordinating Glu in each EF-hand.\n- Flagellar calcium-binding proteins with multi-EF-hand arrays: one peak per EF-hand at the C-terminal Ca2+-ligating Glu across the array, with occasional weaker signal at degenerate/ancestral sites.\n- PP2A regulatory subunits (with or without explicit EF-hand annotation): peaks on acidic residues within EF-hands or EF-hand-like acidic helical contexts.\n- Calpain catalytic subunits (non-EF-hand): peaks on acidic Ca2+-ligating residues within the protease core.\n- Ion channels/transporters such as MCU: peaks at acidic selectivity/filter motifs (e.g., DIME motif).",
+      "is_anchor": false,
+      "x": 5.852438449859619,
+      "y": 6.6552910804748535
+    },
+    {
+      "key": "2^16:42319",
+      "feature_id": "F42319",
+      "feature_index": 42319,
+      "sae_dim": "2^16",
+      "cosine": 0.10787645727396011,
+      "category": "2^16 feature",
+      "label": "Feature F42319 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.401339530944824,
+      "y": 9.848653793334961
+    },
+    {
+      "key": "2^16:44863",
+      "feature_id": "F44863",
+      "feature_index": 44863,
+      "sae_dim": "2^16",
+      "cosine": 0.10771104693412781,
+      "category": "2^16 feature",
+      "label": "Feature F44863 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.508655548095703,
+      "y": 7.777740001678467
+    },
+    {
+      "key": "2^14:1616",
+      "feature_id": "F1616",
+      "feature_index": 1616,
+      "sae_dim": "2^14",
+      "cosine": 0.10716980695724487,
+      "category": "Structural motif",
+      "label": "Helix N-cap boundary residues",
+      "summary": "Helix N-cap and loop-to-helix transition residues: single positions in short coil/turn segments that cap or immediately precede alpha helices (including transmembrane helices), enriched for Ser/Thr/Asp/Glu and often Pro/Gly typical of helix-capping motifs; a generic secondary-structure boundary signal rather than a family-specific functional site.",
+      "description": "Summary: Helix N-cap and loop-to-helix transition residues: single positions in short coil/turn segments that cap or immediately precede alpha helices (including transmembrane helices), enriched for Ser/Thr/Asp/Glu and often Pro/Gly typical of helix-capping motifs; a generic secondary-structure boundary signal rather than a family-specific functional site.\nActivation pattern: Punctate, residue-level peaks scattered across a protein; strongest at well-ordered coils immediately before helix starts (N-cap/N\u2032) and at helix\u2013helix or beta\u2013alpha junctions, including TM-helix entry regions; generally not coincident with catalytic or ligand-binding residues.\nExemplars: - Hydratase-aldolase enzymes: loop residues directly preceding helices (repeated N-cap positions).\n- P-type Ca2+-ATPase (SERCA): coils at the boundaries of transmembrane helices (before TM1, TM3, TM6, TM7, and just before TM10), plus scattered loop sites in the cytosolic headpiece.\n- Menaquinone omega-hydroxylase: a loop immediately before an alpha helix (primary peak) and other secondary-structure boundary loops.\n- Proteasome beta subunit: coil linkers between helices (major peaks), with a minor site in a terminal beta strand.\n- Nicotinate-nucleotide adenylyltransferase: a coil just before a helix and short turns between helices; occasional weak activation in a disordered C-tail.\n- 3-ketodihydrosphingosine reductase (3-KDSR): beta-to-helix turn and coils that precede helices.\n- Calcineurin catalytic subunit (protein phosphatase 3): loops between beta strands and alpha helices within the catalytic domain.\n- Glycerophosphodiester phosphodiesterase (GP-PDE): short, high-confidence loops connecting secondary elements (helix\u2013helix and beta\u2013alpha junctions) within the catalytic domain.\n- Flagellar motor switch protein FliM: N-terminal coil preceding a helix in the CheY-interaction region and other helix-start loops.\n- Phage SAR endolysin: turns between helices in the catalytic domain; no activation on the signal-anchor TM or catalytic residues.",
+      "is_anchor": false,
+      "x": 10.16577434539795,
+      "y": 9.379502296447754
+    },
+    {
+      "key": "2^13:3476",
+      "feature_id": "F3476",
+      "feature_index": 3476,
+      "sae_dim": "2^13",
+      "cosine": 0.10703719407320023,
+      "category": "2^13 feature",
+      "label": "Feature F3476 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 4.66800594329834,
+      "y": 9.047591209411621
+    },
+    {
+      "key": "2^14:1013",
+      "feature_id": "F1013",
+      "feature_index": 1013,
+      "sae_dim": "2^14",
+      "cosine": 0.10683926194906235,
+      "category": "Catalytic function",
+      "label": "ABC transporter NBD motifs",
+      "summary": "Conserved phosphate-binding and hydrolysis motifs of nucleotide-dependent enzymes, with strongest selectivity for ABC transporter nucleotide-binding domains: Walker A P-loop (GxxxxGKT), the LSGGQ signature (C-loop), Walker B Asp/Glu pair, and the H- and Q-loops; secondarily recognizing analogous phosphotransfer/nucleotide-binding sites such as receiver-domain phospho-aspartate centers, HATPase_c ATP-binding folds of histidine kinases, and N-terminal glycine-rich Rossmann-like loops of flavin/NAD binders; also capturing catalytic motifs of c-di-GMP phosphodiesterases (EAL/HD-GYP).",
+      "description": "Summary: Conserved phosphate-binding and hydrolysis motifs of nucleotide-dependent enzymes, with strongest selectivity for ABC transporter nucleotide-binding domains: Walker A P-loop (GxxxxGKT), the LSGGQ signature (C-loop), Walker B Asp/Glu pair, and the H- and Q-loops; secondarily recognizing analogous phosphotransfer/nucleotide-binding sites such as receiver-domain phospho-aspartate centers, HATPase_c ATP-binding folds of histidine kinases, and N-terminal glycine-rich Rossmann-like loops of flavin/NAD binders; also capturing catalytic motifs of c-di-GMP phosphodiesterases (EAL/HD-GYP).\n\nActivation pattern: Residue-level peaks tightly clustered in glycine-rich loops and adjacent catalytic residues; dominant peaks at P-loop glycines and Lys/Thr, SGGQ of the C-loop, the Walker B DE pair, and nearby His/Gln; multiple discrete clusters per nucleotide-binding domain and duplicated blocks in proteins with two NBDs; additional peaks on histidine kinase HATPase_c N/G1/F/G2 boxes (Bergerat-fold glycine-rich loops and associated acidic residues), on phosphoacceptor Asp and Mg-binding acidic residues in receiver domains, on N-terminal GxGxxG loops adjacent to FAD/NAD-binding sites, and on EAL/HD-GYP catalytic Glu/Asp/His residues and coordinating metal-binding sites in c-di-GMP phosphodiesterases.\n\nExemplars:\n- ABC importer ATPases (spermidine/putrescine, cobalt): activation on Walker A P-loop, LSGGQ signature, Walker B DE, and H-loop.\n- ABC exporters (macrolide exporter MacB-like, peptide/secretion ABC ATPases): same NBD motif set within the cytosolic domain.\n- Eukaryotic ABC transporters (ABCA/ABCB/ABCH): activation on NBD P-loop, C-loop, Walker B, with additional peaks at the Q-loop; duplicated clusters in full-length transporters with two NBDs.\n- Ribosome-associated ABC ATPases (ABCF/ABCE-like): two mirrored activation blocks across both NBDs at P-loop, LSGGQ, and Walker B DE.\n- Two-component systems: response regulator receiver domains (CheY-like) with peaks at the active-site phospho-Asp and Mg2+-binding acids; sensor histidine kinases with peaks at HATPase_c N/G1/F/G2 boxes.\n- Flavin-dependent enzymes (flavin halogenases and related FAD binders): weaker activation on N-terminal glycine-rich Rossmann-like loops near the cofactor-binding site.\n- c-di-GMP signaling enzymes (EAL/HD-GYP phosphodiesterases): activation on EAL or HD-GYP motifs and adjacent metal-coordinating residues.",
+      "is_anchor": false,
+      "x": 4.95640754699707,
+      "y": 9.12291145324707
+    },
+    {
+      "key": "2^14:13970",
+      "feature_id": "F13970",
+      "feature_index": 13970,
+      "sae_dim": "2^14",
+      "cosine": 0.106343574821949,
+      "category": "Structural motif",
+      "label": "Pre-motif redox positioning segment",
+      "summary": "Short pre\u2013active-site segment immediately N\u2011terminal to redox\u2011active cysteine/selenocysteine motifs in thiol\u2011based redox proteins; this includes Trx/PDI CXXC, deiodinase Sec, c\u2011type cytochrome CXXCH, glutaredoxin CGFS, peroxiredoxin TxxC, and Cys clusters that ligate redox cofactors (e.g., CxxxCxxC in radical\u2011SAM/NifB and the catalytic Cys pair in VKOR). The segment is the structured prelude that positions the motif; in thioredoxin\u2011like folds it is often a beta\u2011strand\u2013loop\u2013alpha\u2011helix junction, while in other folds (membrane/peripheral or radical\u2011SAM) it is the analogous short pre\u2011motif loop/turn. The motif residues themselves are not the primary target.",
+      "description": "Summary: Short pre\u2013active-site segment immediately N\u2011terminal to redox\u2011active cysteine/selenocysteine motifs in thiol\u2011based redox proteins; this includes Trx/PDI CXXC, deiodinase Sec, c\u2011type cytochrome CXXCH, glutaredoxin CGFS, peroxiredoxin TxxC, and Cys clusters that ligate redox cofactors (e.g., CxxxCxxC in radical\u2011SAM/NifB and the catalytic Cys pair in VKOR). The segment is the structured prelude that positions the motif; in thioredoxin\u2011like folds it is often a beta\u2011strand\u2013loop\u2013alpha\u2011helix junction, while in other folds (membrane/peripheral or radical\u2011SAM) it is the analogous short pre\u2011motif loop/turn. The motif residues themselves are not the primary target.\nActivation pattern: Short 4\u201310 aa windows peaking ~\u22124 to \u22121 to the first motif Cys/Sec (or the first Cys of a Cys cluster); catalytic Cys/Sec have low/zero signal; typically one cluster per catalytic module/domain.\nExemplars: \n- Thioredoxin/thiol\u2013disulfide oxidoreductases (Trx, DsbA/DsbC, PDI): pre\u2011CXXC segment.\n- GILT: coil immediately N\u2011terminal to CXXC.\n- Iodothyronine deiodinases: pre\u2011Sec strand/loop just before the helix with Sec.\n- Glutaredoxins (di\u2011 and monothiol): pre\u2011CGFS segment of the Trx\u2011like active site.\n- Peroxiredoxins: loop just N\u2011terminal to the peroxidatic Cys (TxxC) at the helix start.\n- c\u2011type cytochromes: pre\u2011segment N\u2011terminal to the CXXCH heme\u2011attachment motif.\n- VKORs and fused Trx\u2011like VKORs: pre\u2011motif segment before the catalytic Cys pair/partner CXXC.\n- Radical\u2011SAM enzymes (e.g., NifB): pre\u2011segment immediately N\u2011terminal to the Fe\u2013S\u2011ligating Cys cluster (CxxxCxxC).",
+      "is_anchor": false,
+      "x": 5.475722789764404,
+      "y": 7.040134906768799
+    },
+    {
+      "key": "2^16:63902",
+      "feature_id": "F63902",
+      "feature_index": 63902,
+      "sae_dim": "2^16",
+      "cosine": 0.10616069287061691,
+      "category": "2^16 feature",
+      "label": "Feature F63902 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.3034086227417,
+      "y": 10.975841522216797
+    },
+    {
+      "key": "2^14:7066",
+      "feature_id": "F7066",
+      "feature_index": 7066,
+      "sae_dim": "2^14",
+      "cosine": 0.10608536750078201,
+      "category": "Ligand-binding site",
+      "label": "Histidine-centered metal-binding motifs",
+      "summary": "Histidine-centered divalent metal\u2013coordination motifs\u2014especially HxH/HxHxD histidyl clusters that chelate catalytic or structural metals (most often Zn2+, but also Fe2+, Ni2+, Mn2+/Mg2+)\u2014in metalloenzymes and zinc-binding modules; the feature prioritizes the His ligands (and immediate neighbors) rather than acidic co\u2011ligands.",
+      "description": "Summary: Histidine-centered divalent metal\u2013coordination motifs\u2014especially HxH/HxHxD histidyl clusters that chelate catalytic or structural metals (most often Zn2+, but also Fe2+, Ni2+, Mn2+/Mg2+)\u2014in metalloenzymes and zinc-binding modules; the feature prioritizes the His ligands (and immediate neighbors) rather than acidic co\u2011ligands.\nActivation pattern: Predominantly residue-level peaks on one or more histidines, often as short H clusters/pairs (e.g., HxH, HxHxD); multiple separated His clusters can occur within a protein (multiple metal sites or repeated modules). Occasional weaker peaks appear on adjacent residues that flank or shape the motif (e.g., Gly, Asp/Glu, Gln). Minimal activation outside these localized sites.\nExemplars: - Amidohydrolase superfamily deaminases/deiminases (e.g., enamidase, pterin deaminase): strong peaks on the metal-ligating His residues in the active site; little/no signal on catalytic Glu/Asp.\n- Metallo-\u03b2-lactamase\u2013fold hydrolases/nucleases/phosphodiesterases (e.g., MBL-domain RNase, TATDN2 nuclease, cAMP/cGMP phosphodiesterase): peaks on the HxHxD/HxH histidines that coordinate catalytic metals; acidic co\u2011ligands show weaker or absent activation.\n- C2H2-type zinc-finger transcription factors: peaks on the His pair within each finger that completes Zn2+ coordination.\n- DNA ligases: concentrated peaks on an N\u2011terminal histidine-rich cluster preceding the ligase core, consistent with histidine-based metal-binding patches.\n- Other enzymes with isolated histidines (e.g., D-galactarolactone isomerase): localized peaks at a nearby H (and sometimes an adjacent residue), matching the preference for histidine-centered metal-binding microenvironments.",
+      "is_anchor": false,
+      "x": 4.736199855804443,
+      "y": 8.497840881347656
+    },
+    {
+      "key": "2^16:27361",
+      "feature_id": "F27361",
+      "feature_index": 27361,
+      "sae_dim": "2^16",
+      "cosine": 0.1058100089430809,
+      "category": "2^16 feature",
+      "label": "Feature F27361 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.907299041748047,
+      "y": 10.060820579528809
+    },
+    {
+      "key": "2^16:28708",
+      "feature_id": "F28708",
+      "feature_index": 28708,
+      "sae_dim": "2^16",
+      "cosine": 0.10573247820138931,
+      "category": "2^16 feature",
+      "label": "Feature F28708 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.885337829589844,
+      "y": 8.786149978637695
+    },
+    {
+      "key": "2^16:21207",
+      "feature_id": "F21207",
+      "feature_index": 21207,
+      "sae_dim": "2^16",
+      "cosine": 0.10548869520425797,
+      "category": "2^16 feature",
+      "label": "Feature F21207 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.502074718475342,
+      "y": 10.215641021728516
+    },
+    {
+      "key": "2^16:6945",
+      "feature_id": "F6945",
+      "feature_index": 6945,
+      "sae_dim": "2^16",
+      "cosine": 0.10533211380243301,
+      "category": "2^16 feature",
+      "label": "Feature F6945 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.398756980895996,
+      "y": 8.980461120605469
+    },
+    {
+      "key": "2^13:7578",
+      "feature_id": "F7578",
+      "feature_index": 7578,
+      "sae_dim": "2^13",
+      "cosine": 0.10508603602647781,
+      "category": "2^13 feature",
+      "label": "Feature F7578 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.804886817932129,
+      "y": 8.459111213684082
+    },
+    {
+      "key": "2^16:57292",
+      "feature_id": "F57292",
+      "feature_index": 57292,
+      "sae_dim": "2^16",
+      "cosine": 0.10505782067775726,
+      "category": "2^16 feature",
+      "label": "Feature F57292 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.013449192047119,
+      "y": 8.371495246887207
+    },
+    {
+      "key": "2^16:58405",
+      "feature_id": "F58405",
+      "feature_index": 58405,
+      "sae_dim": "2^16",
+      "cosine": 0.10493987798690796,
+      "category": "2^16 feature",
+      "label": "Feature F58405 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.429261207580566,
+      "y": 7.657885551452637
+    },
+    {
+      "key": "2^14:5223",
+      "feature_id": "F5223",
+      "feature_index": 5223,
+      "sae_dim": "2^14",
+      "cosine": 0.1048240214586258,
+      "category": "Catalytic function",
+      "label": "GDSL/SGNH nucleophile elbow",
+      "summary": "Catalytic nucleophile-elbow at a beta strand\u2013turn\u2013alpha helix junction centered on a G-D-S/GDSL motif, marking the catalytic Ser block of SGNH/GDSL serine hydrolases and acyl-modifying enzymes (notably extracellular O-acetylation systems); the same short, small/polar loop\u2013helix template is weakly recognized in analogous donor/acceptor-binding loops of other transferases.",
+      "description": "Summary: Catalytic nucleophile-elbow at a beta strand\u2013turn\u2013alpha helix junction centered on a G-D-S/GDSL motif, marking the catalytic Ser block of SGNH/GDSL serine hydrolases and acyl-modifying enzymes (notably extracellular O-acetylation systems); the same short, small/polar loop\u2013helix template is weakly recognized in analogous donor/acceptor-binding loops of other transferases.\nActivation pattern: Primarily regional activation over an 8\u201320 residue block spanning a beta strand\u2013loop\u2013alpha helix junction, with residue-level peaks on the Ser of the GDS/GDSL motif when present; often occurs near the N-terminus of the mature, secreted/periplasmic protein and can appear as multiple local patches (e.g., both the GDS block and a conserved H\u2013W region in TBL O-acetyltransferases). The sequence core is enriched for G/D/S/T flanked by hydrophobic residues.\nExemplars: SGNH/GDSL serine hydrolases (e.g., acyloxyacyl hydrolase): peak at the catalytic Ser within the nucleophile elbow; Plant TBL/AXY O-acetyltransferases: activation on the GDS catalytic block and a second patch on the conserved H\u2013W region; Bacterial alginate/capsule O-acetylation proteins: activation around the SGNH-like catalytic Ser block in periplasmic O-acetyltransferases/deacetylases; Sialic-acid O-acetylesterases/deacetylases: activation at the Ser-containing catalytic block; Carbohydrate sulfotransferases (CHST): weaker activation on PAPS-binding loop\u2013helix segments; Phosphoethanolamine transferases (periplasmic catalytic domain, e.g., OpgE/EptA-like): activation on a beta\u2013loop\u2013helix segment adjacent to the active-site region; Acid phosphatases/phosphodiesterases: activation on an N-terminal beta\u2013loop\u2013helix segment lacking specific annotations, consistent with structural motif matching.",
+      "is_anchor": false,
+      "x": 9.035672187805176,
+      "y": 9.540448188781738
+    },
+    {
+      "key": "2^16:39558",
+      "feature_id": "F39558",
+      "feature_index": 39558,
+      "sae_dim": "2^16",
+      "cosine": 0.10477553308010101,
+      "category": "2^16 feature",
+      "label": "Feature F39558 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.869984149932861,
+      "y": 10.198823928833008
+    },
+    {
+      "key": "2^16:53306",
+      "feature_id": "F53306",
+      "feature_index": 53306,
+      "sae_dim": "2^16",
+      "cosine": 0.1045195460319519,
+      "category": "2^16 feature",
+      "label": "Feature F53306 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.368372917175293,
+      "y": 7.770349979400635
+    },
+    {
+      "key": "2^16:36123",
+      "feature_id": "F36123",
+      "feature_index": 36123,
+      "sae_dim": "2^16",
+      "cosine": 0.10405752807855606,
+      "category": "2^16 feature",
+      "label": "Feature F36123 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.643083095550537,
+      "y": 9.958662986755371
+    },
+    {
+      "key": "2^16:50901",
+      "feature_id": "F50901",
+      "feature_index": 50901,
+      "sae_dim": "2^16",
+      "cosine": 0.10385704040527344,
+      "category": "2^16 feature",
+      "label": "Feature F50901 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.967790126800537,
+      "y": 9.093971252441406
+    },
+    {
+      "key": "2^16:49876",
+      "feature_id": "F49876",
+      "feature_index": 49876,
+      "sae_dim": "2^16",
+      "cosine": 0.10377927869558334,
+      "category": "2^16 feature",
+      "label": "Feature F49876 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.58888053894043,
+      "y": 7.239628791809082
+    },
+    {
+      "key": "2^13:1344",
+      "feature_id": "F1344",
+      "feature_index": 1344,
+      "sae_dim": "2^13",
+      "cosine": 0.10353042930364609,
+      "category": "2^13 feature",
+      "label": "Feature F1344 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.482230186462402,
+      "y": 8.970703125
+    },
+    {
+      "key": "2^14:833",
+      "feature_id": "F833",
+      "feature_index": 833,
+      "sae_dim": "2^14",
+      "cosine": 0.10329301655292511,
+      "category": "Structural motif",
+      "label": "Proline-induced helix kinks",
+      "summary": "Proline-centered helix\u2011kink/hinge sites, most commonly Pro residues embedded in transmembrane \u03b1\u2011helices of multi\u2011pass membrane proteins where they introduce local bends/flexibility for conformational switching; occasionally extends to analogous Pro at helix termini or helix\u2013strand junctions in soluble proteins.",
+      "description": "Summary: Proline-centered helix\u2011kink/hinge sites, most commonly Pro residues embedded in transmembrane \u03b1\u2011helices of multi\u2011pass membrane proteins where they introduce local bends/flexibility for conformational switching; occasionally extends to analogous Pro at helix termini or helix\u2013strand junctions in soluble proteins.\nActivation pattern: Residue\u2011level peaks almost exclusively on Proline, typically multiple per protein; concentrated within hydrophobic \u03b1\u2011helices (especially transmembrane segments) and at their boundaries; occasional weaker co\u2011peaks on nearby small/hydrophobic residues; in sensor kinases also present in HAMP and HisKA helical regions near catalytic/relay sites; sparse in long loops.\nExemplars: - GPCRs (opsins, peptide/amine and lipid receptors: melatonin, adenosine A2A, S1P, orphan GPCRs): activation on conserved Pro in TM2/4/5/6/7 that create helix kinks central to receptor activation.\n- Two\u2011component histidine kinases: activation on Pro in the transmembrane segment, the HAMP helix, and an \u03b1\u2011helix of the HisKA domain a few residues from the phospho\u2011His, marking hinge points for signal transmission.\n- ABC transporter permease subunits (MalG family): activation on Pro within multiple TM helices and at TM\u2011to\u2011TM kink regions.\n- P\u2011type heavy\u2011metal ATPases (Cu/Zn/Cd transporters): activation on a Pro within a kinked TM helix and on Pro in cytosolic helices flanking TMs near metal\u2011binding Asp/Glu sites.\n- Soluble oxidoreductases (thioredoxin): activation on Pro within a helix (including the Cys\u2011Gly\u2011Pro\u2011Cys motif) and at a coil linking a helix to a \u03b2\u2011strand, reflecting helix\u2011disrupting/turn\u2011forming Pro.",
+      "is_anchor": false,
+      "x": 4.609775066375732,
+      "y": 8.999442100524902
+    },
+    {
+      "key": "2^16:15246",
+      "feature_id": "F15246",
+      "feature_index": 15246,
+      "sae_dim": "2^16",
+      "cosine": 0.10326247662305832,
+      "category": "2^16 feature",
+      "label": "Feature F15246 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.575101852416992,
+      "y": 9.461692810058594
+    },
+    {
+      "key": "2^16:51212",
+      "feature_id": "F51212",
+      "feature_index": 51212,
+      "sae_dim": "2^16",
+      "cosine": 0.10268453508615494,
+      "category": "2^16 feature",
+      "label": "Feature F51212 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.8847222328186035,
+      "y": 9.24461555480957
+    },
+    {
+      "key": "2^16:38755",
+      "feature_id": "F38755",
+      "feature_index": 38755,
+      "sae_dim": "2^16",
+      "cosine": 0.102650485932827,
+      "category": "2^16 feature",
+      "label": "Feature F38755 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.526545524597168,
+      "y": 8.381650924682617
+    },
+    {
+      "key": "2^16:40725",
+      "feature_id": "F40725",
+      "feature_index": 40725,
+      "sae_dim": "2^16",
+      "cosine": 0.10260111838579178,
+      "category": "2^16 feature",
+      "label": "Feature F40725 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 4.84454345703125,
+      "y": 8.670502662658691
+    },
+    {
+      "key": "2^16:20930",
+      "feature_id": "F20930",
+      "feature_index": 20930,
+      "sae_dim": "2^16",
+      "cosine": 0.10255664587020874,
+      "category": "2^16 feature",
+      "label": "Feature F20930 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.278864860534668,
+      "y": 7.8569254875183105
+    },
+    {
+      "key": "2^16:56286",
+      "feature_id": "F56286",
+      "feature_index": 56286,
+      "sae_dim": "2^16",
+      "cosine": 0.10205492377281189,
+      "category": "2^16 feature",
+      "label": "Feature F56286 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.348097801208496,
+      "y": 8.663276672363281
+    },
+    {
+      "key": "2^16:24057",
+      "feature_id": "F24057",
+      "feature_index": 24057,
+      "sae_dim": "2^16",
+      "cosine": 0.10200904309749603,
+      "category": "2^16 feature",
+      "label": "Feature F24057 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 9.102324485778809,
+      "y": 10.323989868164062
+    },
+    {
+      "key": "2^16:46622",
+      "feature_id": "F46622",
+      "feature_index": 46622,
+      "sae_dim": "2^16",
+      "cosine": 0.10197537392377853,
+      "category": "2^16 feature",
+      "label": "Feature F46622 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.323726177215576,
+      "y": 7.31829833984375
+    },
+    {
+      "key": "2^14:14699",
+      "feature_id": "F14699",
+      "feature_index": 14699,
+      "sae_dim": "2^14",
+      "cosine": 0.10177380591630936,
+      "category": "Catalytic function",
+      "label": "\u03b1/\u03b2-hydrolase nucleophile elbow motif",
+      "summary": "Conserved \u03b1/\u03b2-hydrolase \u201cnucleophile elbow\u201d surrounding the catalytic nucleophile (most often Ser; also Asp/Cys) at the \u03b2-strand\u2013loop\u2013\u03b1-helix junction, typically a short Gly/His-enriched motif (e.g., G\u2013X\u2013S\u2013X\u2013G, G\u2013H\u2013S, H\u2013D) that flanks the nucleophile and contributes to the oxyanion-hole environment.",
+      "description": "Summary: Conserved \u03b1/\u03b2-hydrolase \u201cnucleophile elbow\u201d surrounding the catalytic nucleophile (most often Ser; also Asp/Cys) at the \u03b2-strand\u2013loop\u2013\u03b1-helix junction, typically a short Gly/His-enriched motif (e.g., G\u2013X\u2013S\u2013X\u2013G, G\u2013H\u2013S, H\u2013D) that flanks the nucleophile and contributes to the oxyanion-hole environment.\nActivation pattern: Residue-level peaks confined to a 5\u201310 aa window in the \u03b1/\u03b2-hydrolase core, maximal at the residue immediately N-terminal to the nucleophile (often a His) with signal extending to the nucleophile itself and its flanking Gly/small hydrophobics; localized to the \u03b2-strand preceding the nucleophile and into the start of the following helix. Minimal activation elsewhere in the protein; occasional weaker secondary peak near the catalytic acidic residue strand.\nExemplars: - Kynurenine formamidase (arylformamidase, \u03b1/\u03b2-hydrolase): peak at His just N-terminal to the catalytic Ser; weaker signal near a strand preceding the catalytic Asp.\n- Lipid droplet hydrolase/lipase-like \u03b1/\u03b2-hydrolase: sharp focus on a GHSMG/GXSXG segment around the catalytic Ser at the strand\u2013loop\u2013helix transition; no signal on distal His/Asp of the triad.\n- Epoxide hydrolase (\u03b1/\u03b2-hydrolase with Asp nucleophile): hotspot at His immediately before the catalytic Asp in the nucleophile elbow; other catalytic residues show little/no activation.\n- Dipeptidyl peptidases (S9 family): activation on the conserved G\u2013W\u2013S segment containing the catalytic Ser within the \u03b1/\u03b2-hydrolase domain.\n- Bacterial esterases/thioesterases (including siderophore- and biotin-pathway esterases) and plant hormone/pigment hydrolases: activation on the canonical GXSXG/G\u2013H\u2013S nucleophile motif at the \u03b2-strand\u2013loop\u2013helix junction.",
+      "is_anchor": false,
+      "x": 7.426080226898193,
+      "y": 8.315156936645508
+    },
+    {
+      "key": "2^16:58972",
+      "feature_id": "F58972",
+      "feature_index": 58972,
+      "sae_dim": "2^16",
+      "cosine": 0.10089917480945587,
+      "category": "2^16 feature",
+      "label": "Feature F58972 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 8.003264427185059,
+      "y": 8.246647834777832
+    },
+    {
+      "key": "2^16:48418",
+      "feature_id": "F48418",
+      "feature_index": 48418,
+      "sae_dim": "2^16",
+      "cosine": 0.10074145346879959,
+      "category": "2^16 feature",
+      "label": "Feature F48418 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 5.165518283843994,
+      "y": 7.864377975463867
+    },
+    {
+      "key": "2^13:3129",
+      "feature_id": "F3129",
+      "feature_index": 3129,
+      "sae_dim": "2^13",
+      "cosine": 0.10038827359676361,
+      "category": "2^13 feature",
+      "label": "Feature F3129 (2^13)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 7.442496299743652,
+      "y": 10.362156867980957
+    },
+    {
+      "key": "2^14:13398",
+      "feature_id": "F13398",
+      "feature_index": 13398,
+      "sae_dim": "2^14",
+      "cosine": 0.10030423849821091,
+      "category": "Ligand-binding site",
+      "label": "Ser/Thr motif-proximal signal",
+      "summary": "Ser/Thr-centric signal marking residues that sit in or immediately flank functional binding/regulatory motifs\u2014most characteristically the conserved Thr/Ser of Rossmann-like NAD(P)-binding loops in SDR/oxidoreductases\u2014and, more broadly, Ser/Thr positions adjacent to catalytic or metal-binding sites or within Ser/Thr-rich flexible regulatory segments.",
+      "description": "Summary: Ser/Thr-centric signal marking residues that sit in or immediately flank functional binding/regulatory motifs\u2014most characteristically the conserved Thr/Ser of Rossmann-like NAD(P)-binding loops in SDR/oxidoreductases\u2014and, more broadly, Ser/Thr positions adjacent to catalytic or metal-binding sites or within Ser/Thr-rich flexible regulatory segments.\nActivation pattern: Predominantly residue-level peaks on Ser and Thr (Val as a secondary tolerated residue), appearing as isolated positions or short Ser/Thr runs. In SDR/oxidoreductases, peaks are enriched near the N-terminus (\u22485\u201325) at/next to the Rossmann NAD(P)-binding motif; in histidine kinases they cluster within loops of the cytosolic HATPase_c core (absent from transmembranes/HPt). Activations occur across secondary structures (\u03b2, \u03b1, loops), usually in well-structured regions (high pLDDT) but can also appear in disordered loops. Aromatic/acidic residues rarely activate.\nExemplars: - NAD(P)-dependent oxidoreductases (SDR family and related): strong peaks on Thr/Ser preceding/within the Rossmann NAD(P)-binding loop (e.g., TGxxxGIG or GxSxG) and on nearby NAD(P)-contacting elements; additional sites near the catalytic Tyr/Lys helix.\n- 3-ketodihydrosphingosine reductase (TSC10-like): activation on Thr/Ser within/adjacent to annotated NADPH-binding motifs and residues contacting NADP(+).\n- 2-(R)-hydroxypropyl-CoM dehydrogenase: discrete Thr peaks including an annotated NAD(+)-binding Thr and other Thr in structured elements.\n- Two-component histidine kinases: scattered Thr/Ser peaks within the kinase (HATPase_c) domain loops/ATP-lid; no activation in transmembrane segments or most of the HPt domain.\n- Sulfatases (arylsulfatase-like): Thr peaks in \u03b2-strands/\u03b1-helices adjacent to Ca2+-binding sites and near catalytic residues; the modified catalytic Ser itself is typically not highlighted.\n- Ketoreductases with low-confidence regions: occasional activation falls in disordered loops (sometimes on non-Ser/Thr), consistent with tolerance for flexible Ser/Thr-rich segments.",
+      "is_anchor": false,
+      "x": 9.807672500610352,
+      "y": 9.821956634521484
+    },
+    {
+      "key": "2^16:52632",
+      "feature_id": "F52632",
+      "feature_index": 52632,
+      "sae_dim": "2^16",
+      "cosine": 0.10022547841072083,
+      "category": "2^16 feature",
+      "label": "Feature F52632 (2^16)",
+      "summary": "",
+      "description": "",
+      "is_anchor": false,
+      "x": 6.259485721588135,
+      "y": 9.534528732299805
+    },
+    {
+      "key": "2^14:13669",
+      "feature_id": "F13669",
+      "feature_index": 13669,
+      "sae_dim": "2^14",
+      "cosine": 0.10001485794782639,
+      "category": "Catalytic function",
+      "label": "SAM-MTase catalytic micro-motifs",
+      "summary": "Short catalytic micro\u2011motifs in class I SAM\u2011dependent methyltransferases, typically the D/HPPY\u2011like His\u2013aromatic\u2013acidic loop (or an equivalent \u03b2\u2192\u03b1 junction immediately adjacent to the SAM\u2011binding pocket) that lines the active site across diverse methyltransferase families",
+      "description": "Summary: Short catalytic micro\u2011motifs in class I SAM\u2011dependent methyltransferases, typically the D/HPPY\u2011like His\u2013aromatic\u2013acidic loop (or an equivalent \u03b2\u2192\u03b1 junction immediately adjacent to the SAM\u2011binding pocket) that lines the active site across diverse methyltransferase families\nActivation pattern: Residue\u2011level peaks in very short windows (2\u201310 aa), often one to a few residues, clustered in active\u2011site loops at \u03b2\u2011strand\u2192\u03b1\u2011helix junctions near the Rossmann SAM\u2011binding site; enriched for His with adjacent Tyr/Phe/Trp and acidic residues (D/E), flanked by hydrophobics (V/L/I). In some families this collapses to a single hotspot glycine within the SAM\u2011loop immediately following a SAM\u2011binding residue.\nExemplars: - RNA cap guanine\u2011N7 methyltransferases (eukaryotic and viral capping modules): activation on the His/acidic\u2013aromatic loop that stacks the cap guanine and abuts the catalytic elements of the SAM site.\n- tRNA methyltransferases (TRM9\u2011family, METTL\u2011family): activation on the D/HPPY\u2011like catalytic loop that positions the target base for methyl transfer.\n- Protein N\u2011terminal X\u2011Pro\u2011Lys methyltransferases (NTMT1/NTMT2): activation on the conserved DPPY/HPNY loop adjacent to the SAM pocket.\n- Quinone/benzoquinone pathway O\u2011methyltransferases (e.g., UbiG/Coq/COMT\u2011like): activation on the HPPY/DPVW\u2011type catalytic loop lining the substrate pocket.\n- BioC\u2011type malonyl\u2011ACP O\u2011methyltransferases (biotin synthesis, including fused BioCD/H): activation on the His\u2013Tyr/acidic micro\u2011motif adjacent to SAM.\n- Phospholipid/membrane\u2011lipid methylation enzymes: activation on short active\u2011site loops with His + aromatic + acidic residues near the SAM site.\n- Cyclopropane mycolic\u2011acid synthase (MmaA2; SAM\u2011dependent): a single peak at the \u03b2\u2192\u03b1 junction glycine immediately following a SAM\u2011binding isoleucine, consistent with the same SAM\u2011proximal loop targeted in other families.",
+      "is_anchor": false,
+      "x": 7.1117448806762695,
+      "y": 7.615822792053223
+    }
+  ],
+  "anchor_metadata": {
+    "feature_index": 6716,
+    "label": "Serine hydrolase nucleophile elbow",
+    "summary": "Catalytic nucleophile serine of serine hydrolases, specifically the conserved \u201cnucleophile elbow\u201d pentapeptide (e.g., GXSXG/GHSxG/GDSL) at a \u03b2\u2192\u03b1 junction in \u03b1/\u03b2\u2011hydrolase\u2013like folds, across esterases/lipases/thioesterases and related serine proteases/transferases; the feature recognizes this structural/sequence motif even in inactive esterase\u2011like homologs.",
+    "description": "Summary: Catalytic nucleophile serine of serine hydrolases, specifically the conserved \u201cnucleophile elbow\u201d pentapeptide (e.g., GXSXG/GHSxG/GDSL) at a \u03b2\u2192\u03b1 junction in \u03b1/\u03b2\u2011hydrolase\u2013like folds, across esterases/lipases/thioesterases and related serine proteases/transferases; the feature recognizes this structural/sequence motif even in inactive esterase\u2011like homologs.\nActivation pattern: Predominantly residue-level peaks centered on a single serine in a short coil at the end of a \u03b2\u2011strand entering an \u03b1\u2011helix (\u03b2\u2192\u03b1 turn); occasional weak shoulders on immediately adjacent small residues or nearby loop positions; other catalytic\u2011triad residues (Asp/His) are typically not activated. Most proteins show 1\u20134 peaks, with multi\u2011modular assembly\u2011line enzymes showing one per TE/catalytic module.\nExemplars: - Siderophore esterases/trilactone hydrolases (IroE/IroD family): peak on the nucleophilic Ser at the \u03b2\u2192\u03b1 junction.\n- BioH-like pimeloyl\u2011ACP methyl ester esterases: sharp peak on the annotated catalytic Ser; Asp/His of the triad remain silent.\n- Mammalian BPHL/carboxylesterase-like hydrolases: dominant peak on the catalytic Ser with minor signal on an adjacent substrate\u2011binding residue.\n- NRPS/PKS thioesterase domains: activation on the Ser within the GHSxG motif; multiple peaks in multi\u2011module systems.\n- Cholinesterases and carboxylesterases: activation on the catalytic Ser in the GXSXG nucleophile elbow.\n- Serine carboxypeptidases and dipeptidyl peptidases (\u03b1/\u03b2\u2011hydrolase catalytic domains): peak on the active\u2011site Ser.\n- Mycobacterial Ag85 mycolyltransferases (SGNH/GDSL hydrolase\u2011like): activation on the catalytic Ser of the SGNH/GDSL motif.\n- Inactive esterase\u2011like/pseudoenzymes: residual activation on the conserved nucleophile\u2011elbow serine despite loss of catalytic activity.",
+    "activation_pattern": "Predominantly residue-level peaks centered on a single serine in a short coil at the end of a \u03b2\u2011strand entering an \u03b1\u2011helix (\u03b2\u2192\u03b1 turn); occasional weak shoulders on immediately adjacent small residues or nearby loop positions; other catalytic\u2011triad residues (Asp/His) are typically not activated. Most proteins show 1\u20134 peaks, with multi\u2011modular assembly\u2011line enzymes showing one per TE/catalytic module.",
+    "category": "Catalytic function",
+    "exemplar_protein_families": "- Siderophore esterases/trilactone hydrolases (IroE/IroD family): peak on the nucleophilic Ser at the \u03b2\u2192\u03b1 junction.\n- BioH-like pimeloyl\u2011ACP methyl ester esterases: sharp peak on the annotated catalytic Ser; Asp/His of the triad remain silent.\n- Mammalian BPHL/carboxylesterase-like hydrolases: dominant peak on the catalytic Ser with minor signal on an adjacent substrate\u2011binding residue.\n- NRPS/PKS thioesterase domains: activation on the Ser within the GHSxG motif; multiple peaks in multi\u2011module systems.\n- Cholinesterases and carboxylesterases: activation on the catalytic Ser in the GXSXG nucleophile elbow.\n- Serine carboxypeptidases and dipeptidyl peptidases (\u03b1/\u03b2\u2011hydrolase catalytic domains): peak on the active\u2011site Ser.\n- Mycobacterial Ag85 mycolyltransferases (SGNH/GDSL hydrolase\u2011like): activation on the catalytic Ser of the SGNH/GDSL motif.\n- Inactive esterase\u2011like/pseudoenzymes: residual activation on the conserved nucleophile\u2011elbow serine despite loss of catalytic activity.",
+    "uniref90_frequency": 45054298,
+    "uniref90_idf": 1.5296968221664429,
+    "uniref90_max_activation": 26.3125,
+    "top_100_uniref_ids": [
+      {
+        "uniref_id": "UPI00398ACB9B",
+        "activation": 26.3125
+      },
+      {
+        "uniref_id": "UPI001237D054",
+        "activation": 26.078125
+      },
+      {
+        "uniref_id": "UPI0028404837",
+        "activation": 25.921875
+      },
+      {
+        "uniref_id": "A0A7K3VWZ5",
+        "activation": 25.796875
+      },
+      {
+        "uniref_id": "A0A1Y3ASC8",
+        "activation": 25.734375
+      },
+      {
+        "uniref_id": "A0A7X0H5J7",
+        "activation": 25.65625
+      },
+      {
+        "uniref_id": "W5S4S1",
+        "activation": 25.65625
+      },
+      {
+        "uniref_id": "UPI00191619C8",
+        "activation": 25.625
+      },
+      {
+        "uniref_id": "UPI003608DF29",
+        "activation": 25.5625
+      },
+      {
+        "uniref_id": "A0A1H3JY85",
+        "activation": 25.5625
+      },
+      {
+        "uniref_id": "A0A1H7LU31",
+        "activation": 25.5625
+      },
+      {
+        "uniref_id": "A0A562IVV5",
+        "activation": 25.5625
+      },
+      {
+        "uniref_id": "A0A7J4ZWQ3",
+        "activation": 25.546875
+      },
+      {
+        "uniref_id": "UPI00273F9B24",
+        "activation": 25.53125
+      },
+      {
+        "uniref_id": "A0A2T0TSQ1",
+        "activation": 25.515625
+      },
+      {
+        "uniref_id": "A0A9X5U9V1",
+        "activation": 25.515625
+      },
+      {
+        "uniref_id": "A0A9X3G0B2",
+        "activation": 25.515625
+      },
+      {
+        "uniref_id": "A0A0N8HBP4",
+        "activation": 25.5
+      },
+      {
+        "uniref_id": "A0A1M5JXC1",
+        "activation": 25.484375
+      },
+      {
+        "uniref_id": "A0A1C4XNI2",
+        "activation": 25.484375
+      },
+      {
+        "uniref_id": "UPI002626462A",
+        "activation": 25.484375
+      },
+      {
+        "uniref_id": "A0A4Y9MJZ2",
+        "activation": 25.484375
+      },
+      {
+        "uniref_id": "A0AA37BIE0",
+        "activation": 25.46875
+      },
+      {
+        "uniref_id": "A0A846LP34",
+        "activation": 25.46875
+      },
+      {
+        "uniref_id": "Q4V172",
+        "activation": 25.46875
+      },
+      {
+        "uniref_id": "A0A1C6VYE2",
+        "activation": 25.46875
+      },
+      {
+        "uniref_id": "A0A9X3G2J4",
+        "activation": 25.453125
+      },
+      {
+        "uniref_id": "UPI003866093A",
+        "activation": 25.453125
+      },
+      {
+        "uniref_id": "A0A1C6TW05",
+        "activation": 25.453125
+      },
+      {
+        "uniref_id": "UPI001FA7639A",
+        "activation": 25.4375
+      },
+      {
+        "uniref_id": "A0A372IVC4",
+        "activation": 25.4375
+      },
+      {
+        "uniref_id": "UPI001FF61D25",
+        "activation": 25.4375
+      },
+      {
+        "uniref_id": "A0A1N5VTD9",
+        "activation": 25.4375
+      },
+      {
+        "uniref_id": "A0A512DEY6",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "A0A6P0H3T4",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "UPI001E31707F",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "A0A1C5JA80",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "I4F4S0",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "A0A1A8ZE73",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "A0A285EFN6",
+        "activation": 25.421875
+      },
+      {
+        "uniref_id": "UPI001F3E3790",
+        "activation": 25.40625
+      },
+      {
+        "uniref_id": "UPI001BCF1598",
+        "activation": 25.40625
+      },
+      {
+        "uniref_id": "A0A1H0JLV2",
+        "activation": 25.40625
+      },
+      {
+        "uniref_id": "UPI0033CF7432",
+        "activation": 25.40625
+      },
+      {
+        "uniref_id": "UPI002785A942",
+        "activation": 25.40625
+      },
+      {
+        "uniref_id": "A0A1H3CHE2",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "UPI0023491563",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "A0A317D409",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "A0A2W2C0W4",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "A0A7K3WZ40",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "UPI0015AC0540",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "UPI001C74E3CD",
+        "activation": 25.390625
+      },
+      {
+        "uniref_id": "UPI000369DDF8",
+        "activation": 25.375
+      },
+      {
+        "uniref_id": "UPI0033ADF90A",
+        "activation": 25.375
+      },
+      {
+        "uniref_id": "A0A1C4YQ47",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "A0A2X2X723",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "A0A323VA35",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "UPI0022AB7597",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "UPI001FD8634D",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "A0A328P0A1",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "A0A367B8U8",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "UPI003891B642",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "A0A521F106",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "UPI00110CCB93",
+        "activation": 25.359375
+      },
+      {
+        "uniref_id": "A0A1I5H539",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A7Y9WYT9",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A3E2YNS2",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A420F6V9",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A840VSI8",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "H2EDC9",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A6I5WJG1",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "UPI000CEC7F5F",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A4Q7Y926",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A3N9WYW8",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "UPI00398650A0",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A239ELL2",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A1I6ZTZ3",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "I0L573",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A367AFB6",
+        "activation": 25.34375
+      },
+      {
+        "uniref_id": "A0A1I5U6A4",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0A1G9YSF5",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0A7S4DU55",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0A6P0GMZ9",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0A1C6TXG9",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "UPI0037B71B0F",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0AAU8HN22",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "UPI00207D1106",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "UPI0018E4BAD4",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0A562IG69",
+        "activation": 25.328125
+      },
+      {
+        "uniref_id": "A0A1Q5ATN7",
+        "activation": 25.3125
+      },
+      {
+        "uniref_id": "A0AA96Q9Y6",
+        "activation": 25.3125
+      },
+      {
+        "uniref_id": "A0A366ZVL0",
+        "activation": 25.3125
+      },
+      {
+        "uniref_id": "A0A1C3MZT5",
+        "activation": 25.3125
+      },
+      {
+        "uniref_id": "UPI001CECEEC8",
+        "activation": 25.3125
+      },
+      {
+        "uniref_id": "A0A317DFJ5",
+        "activation": 25.3125
+      },
+      {
+        "uniref_id": "UPI001D147BEF",
+        "activation": 25.296875
+      },
+      {
+        "uniref_id": "UPI001EF8523D",
+        "activation": 25.296875
+      },
+      {
+        "uniref_id": "UPI0027E019F1",
+        "activation": 25.296875
+      },
+      {
+        "uniref_id": "UPI002815BED9",
+        "activation": 25.296875
+      },
+      {
+        "uniref_id": "UPI0034DF3876",
+        "activation": 25.296875
+      }
+    ],
+    "top_swissprot_activations": [
+      {
+        "uniprot_id": "Q04066",
+        "activation": 23.26862144470215
+      },
+      {
+        "uniprot_id": "Q9CQC8",
+        "activation": 22.760093688964844
+      },
+      {
+        "uniprot_id": "Q86WA6",
+        "activation": 22.59724235534668
+      },
+      {
+        "uniprot_id": "P75895",
+        "activation": 22.27252960205078
+      },
+      {
+        "uniprot_id": "B8YG19",
+        "activation": 22.208112716674805
+      },
+      {
+        "uniprot_id": "Q96I13",
+        "activation": 22.207794189453125
+      },
+      {
+        "uniprot_id": "G2QND5",
+        "activation": 22.146194458007812
+      },
+      {
+        "uniprot_id": "A8PB24",
+        "activation": 22.05512809753418
+      },
+      {
+        "uniprot_id": "P26495",
+        "activation": 22.049283981323242
+      },
+      {
+        "uniprot_id": "P12625",
+        "activation": 21.929975509643555
+      },
+      {
+        "uniprot_id": "Q8NJP6",
+        "activation": 21.912677764892578
+      },
+      {
+        "uniprot_id": "Q15KI9",
+        "activation": 21.85487937927246
+      },
+      {
+        "uniprot_id": "Q8NKB0",
+        "activation": 21.834911346435547
+      },
+      {
+        "uniprot_id": "P23974",
+        "activation": 21.802350997924805
+      },
+      {
+        "uniprot_id": "Q88FY3",
+        "activation": 21.684345245361328
+      },
+      {
+        "uniprot_id": "Q10QA5",
+        "activation": 21.656734466552734
+      },
+      {
+        "uniprot_id": "Q588Z2",
+        "activation": 21.65468978881836
+      },
+      {
+        "uniprot_id": "Q7RWX8",
+        "activation": 21.597103118896484
+      },
+      {
+        "uniprot_id": "Q9VMC9",
+        "activation": 21.531808853149414
+      },
+      {
+        "uniprot_id": "P37355",
+        "activation": 21.423229217529297
+      }
+    ],
+    "decoder_nearest_neighbors": [
+      4413,
+      12634,
+      11527,
+      11542,
+      15225,
+      10316,
+      9453,
+      5087,
+      1353,
+      16377
+    ],
+    "threshold": 0.5044780969619751
+  }
+}

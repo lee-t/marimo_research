@@ -1,6 +1,17 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "marimo",
+#     "matplotlib==3.11.0",
+#     "numpy==2.5.1",
+#     "torch==2.13.0",
+#     "torchvision==0.28.0",
+# ]
+# ///
+
 import marimo
 
-__generated_with = "0.9.14"
+__generated_with = "0.23.14"
 app = marimo.App(width="medium")
 
 
@@ -20,59 +31,44 @@ def _():
     import torchvision
     import torchvision.transforms as transforms
 
-    return (
-        DataLoader,
-        F,
-        math,
-        mo,
-        nn,
-        np,
-        os,
-        plt,
-        time,
-        torch,
-        torchvision,
-        transforms,
-    )
+    return DataLoader, F, mo, nn, os, plt, torch, torchvision, transforms
 
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
-        # MNIST SAE testbed — Phase 0-2 (Option B: rich conv feature-map embeddings)
+    mo.md(r"""
+    # MNIST SAE testbed — Phase 0-2 (Option B: rich conv feature-map embeddings)
 
-        This notebook implements the first three phases of the research plan
-        for validating a sparse-autoencoder pipeline on a toy classifier
-        before applying the same methodology to protein language model
-        embeddings (ESMC).
+    This notebook implements the first three phases of the research plan
+    for validating a sparse-autoencoder pipeline on a toy classifier
+    before applying the same methodology to protein language model
+    embeddings (ESMC).
 
-        It uses **Option B** from the original plan: instead of a single,
-        already-class-separated FC bottleneck vector per image, the
-        embedding is the CNN's second conv layer's *spatial feature map*.
-        Each of the H×W spatial positions in that map is treated as its own
-        token — closely analogous to per-residue embeddings in a protein
-        language model — rather than one global per-image vector. This
-        should give the SAE genuinely local, translation-invariant visual
-        primitives (edge/corner/stroke fragments) to recover, instead of
-        directions that are already nearly class-separated by construction.
+    It uses **Option B** from the original plan: instead of a single,
+    already-class-separated FC bottleneck vector per image, the
+    embedding is the CNN's second conv layer's *spatial feature map*.
+    Each of the H×W spatial positions in that map is treated as its own
+    token — closely analogous to per-residue embeddings in a protein
+    language model — rather than one global per-image vector. This
+    should give the SAE genuinely local, translation-invariant visual
+    primitives (edge/corner/stroke fragments) to recover, instead of
+    directions that are already nearly class-separated by construction.
 
-        - **Phase 0** — train a small CNN digit classifier; expose its
-          conv2 feature map (not the FC head) as the embedding
-        - **Phase 1** — cache per-position feature-map tokens across the
-          full train/test set, plus a quick sanity-check projection
-        - **Phase 2** — train a sparse autoencoder (vanilla L1 or TopK) on
-          the cached tokens and track the standard health metrics:
-          variance explained, L0, dead-feature fraction
+    - **Phase 0** — train a small CNN digit classifier; expose its
+      conv2 feature map (not the FC head) as the embedding
+    - **Phase 1** — cache per-position feature-map tokens across the
+      full train/test set, plus a quick sanity-check projection
+    - **Phase 2** — train a sparse autoencoder (vanilla L1 or TopK) on
+      the cached tokens and track the standard health metrics:
+      variance explained, L0, dead-feature fraction
 
-        Feature interpretation and causal validation (Phase 3+) are left for
-        a follow-on notebook — this one just gets you a trained classifier,
-        cached tokens, and a trained SAE to interpret.
+    Feature interpretation and causal validation (Phase 3+) are left for
+    a follow-on notebook — this one just gets you a trained classifier,
+    cached tokens, and a trained SAE to interpret.
 
-        Run with `marimo edit mnist_sae_phase0_2.py`. Requires
-        `torch`, `torchvision`, `matplotlib`, `numpy`, `marimo`.
-        """
-    )
+    Run with `marimo edit mnist_sae_phase0_2.py`. Requires
+    `torch`, `torchvision`, `matplotlib`, `numpy`, `marimo`.
+    """)
     return
 
 
@@ -91,7 +87,9 @@ def _(mo, torch):
 
 @app.cell
 def _(mo):
-    mo.md(r"""## Phase 0 — Classifier and data""")
+    mo.md(r"""
+    ## Phase 0 — Classifier and data
+    """)
     return
 
 
@@ -153,8 +151,7 @@ def _(DataLoader, batch_size_slider, torchvision, transforms):
     train_eval_loader = DataLoader(
         train_dataset, batch_size=512, shuffle=False
     )
-
-    return test_dataset, test_loader, train_dataset, train_eval_loader, train_loader
+    return test_loader, train_eval_loader, train_loader
 
 
 @app.cell
@@ -229,7 +226,7 @@ def _(F, torch):
             )
         return model, history
 
-    return evaluate_classifier, train_classifier
+    return (train_classifier,)
 
 
 @app.cell
@@ -294,33 +291,31 @@ def _(classifier_history, plt):
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
-        ## Phase 1 — Activation caching
+    mo.md(r"""
+    ## Phase 1 — Activation caching
 
-        Run every train and test image through the trained classifier once
-        and stash the conv2 feature map. Rather than one vector per image,
-        each of the 7×7=49 spatial positions is unrolled into its own
-        token, giving `N_images × 49` embeddings of width `conv2_channels`.
-        Each token also carries: which image and grid position it came
-        from, the image's true label, the image's predicted label, and the
-        image's predicted-class logit margin — note these last three are
-        **per-image, broadcast onto every position of that image**, so
-        they're a weak/proxy label at the position level (a token from a
-        blank corner of a "3" is still tagged "3"). Useful for a first pass,
-        but treat position-level purity numbers with that caveat in mind.
+    Run every train and test image through the trained classifier once
+    and stash the conv2 feature map. Rather than one vector per image,
+    each of the 7×7=49 spatial positions is unrolled into its own
+    token, giving `N_images × 49` embeddings of width `conv2_channels`.
+    Each token also carries: which image and grid position it came
+    from, the image's true label, the image's predicted label, and the
+    image's predicted-class logit margin — note these last three are
+    **per-image, broadcast onto every position of that image**, so
+    they're a weak/proxy label at the position level (a token from a
+    blank corner of a "3" is still tagged "3"). Useful for a first pass,
+    but treat position-level purity numbers with that caveat in mind.
 
-        A separate, genuinely per-image embedding (the same
-        global-average-pooled vector the classifier head actually reads) is
-        cached alongside the tokens, for a cleaner sanity-check visualization.
+    A separate, genuinely per-image embedding (the same
+    global-average-pooled vector the classifier head actually reads) is
+    cached alongside the tokens, for a cleaner sanity-check visualization.
 
-        Two convs + two 2×2 pools gives each output position an exact
-        receptive field of 10×10 input pixels with a 4px stride between
-        adjacent positions — so neighboring tokens have overlapping, but
-        distinct, views of the image. That geometry is what makes patch-level
-        visualization straightforward in Phase 3.
-        """
-    )
+    Two convs + two 2×2 pools gives each output position an exact
+    receptive field of 10×10 input pixels with a 4px stride between
+    adjacent positions — so neighboring tokens have overlapping, but
+    distinct, views of the image. That geometry is what makes patch-level
+    visualization straightforward in Phase 3.
+    """)
     return
 
 
@@ -414,29 +409,27 @@ def _(
         f"**{train_tokens['tokens'].shape[1]}**. Saved to "
         f"`./checkpoints/activations.pt` and `./checkpoints/classifier.pt`."
     )
-    return test_pooled, test_tokens, train_pooled, train_tokens
+    return train_pooled, train_tokens
 
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
-        ### Quick sanity check: 2D projection of the per-image embedding
+    mo.md(r"""
+    ### Quick sanity check: 2D projection of the per-image embedding
 
-        A simple PCA (via SVD, no sklearn dependency) projection of the
-        **per-image pooled** embedding (not the per-position tokens —
-        those don't have a clean per-example label), colored by true digit
-        label. This is just eyeballing whether the conv backbone learned
-        sensible global structure before handing per-position tokens to the
-        SAE — it is **not** a substitute for the SAE feature analysis in
-        Phase 3.
-        """
-    )
+    A simple PCA (via SVD, no sklearn dependency) projection of the
+    **per-image pooled** embedding (not the per-position tokens —
+    those don't have a clean per-example label), colored by true digit
+    label. This is just eyeballing whether the conv backbone learned
+    sensible global structure before handing per-position tokens to the
+    SAE — it is **not** a substitute for the SAE feature analysis in
+    Phase 3.
+    """)
     return
 
 
 @app.cell
-def _(np, plt, torch, train_pooled):
+def _(plt, torch, train_pooled):
     def pca_2d(x, n_components=2):
         x_centered = x - x.mean(dim=0, keepdim=True)
         _, _, v = torch.linalg.svd(x_centered, full_matrices=False)
@@ -468,19 +461,17 @@ def _(np, plt, torch, train_pooled):
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
-        ## Phase 2 — Sparse autoencoder
+    mo.md(r"""
+    ## Phase 2 — Sparse autoencoder
 
-        Vanilla ReLU+L1 SAE and a TopK variant, sharing the same module, now
-        trained on the per-position **tokens** rather than a per-image
-        vector — with 49 tokens per image, the full train set is close to
-        3M rows, so training subsamples down to a fixed cap for tractable
-        wall-clock time on CPU. Decoder columns are renormalized to unit
-        norm after every optimizer step (keeps the L1 penalty from being
-        trivially gamed by shrinking decoder norms).
-        """
-    )
+    Vanilla ReLU+L1 SAE and a TopK variant, sharing the same module, now
+    trained on the per-position **tokens** rather than a per-image
+    vector — with 49 tokens per image, the full train set is close to
+    3M rows, so training subsamples down to a fixed cap for tractable
+    wall-clock time on CPU. Decoder columns are renormalized to unit
+    norm after every optimizer step (keeps the L1 penalty from being
+    trivially gamed by shrinking decoder norms).
+    """)
     return
 
 
@@ -758,42 +749,43 @@ def _(plt, sae_history):
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
-        ---
+    mo.md(r"""
+    ---
 
-        ## Next: Phase 3
+    ## Next: Phase 3
 
-        With `./checkpoints/classifier.pt`, `./checkpoints/activations.pt`,
-        and `./checkpoints/sae.pt` on disk, the next notebook can move on to
-        feature interpretation and causal validation without retraining
-        anything here:
+    With `./checkpoints/classifier.pt`, `./checkpoints/activations.pt`,
+    and `./checkpoints/sae.pt` on disk, the next notebook can move on to
+    feature interpretation and causal validation without retraining
+    anything here:
 
-        - max-activating example grids per SAE feature — now genuinely
-          patch-level: use `img_idx`/`pos_idx` in the cached token data plus
-          the exact 10×10px / 4px-stride receptive-field geometry to crop
-          and display the actual image region each firing token corresponds
-          to, rather than the whole digit
-        - gradient-based activation maximization in pixel space
-        - feature-class selectivity / purity scoring — remember token
-          labels are per-image proxies, so cross-check any position-level
-          purity claim against a handful of cropped examples
-        - reconstruction substitution (fraction of classifier accuracy
-          recovered when swapping in the SAE reconstruction of each token,
-          re-pooling, and reclassifying)
-        - single ablation/amplification of a candidate feature
-        - projecting SAE decoder directions onto `fc_out`'s weights directly
-          — no extra care needed for the avg-pool step, since pooling and
-          the readout are both linear and commute, so per-position causal
-          relevance is exact, not approximate. This is the same
-          causally-privileged-subspace question this testbed exists to
-          prototype before trying it on ESMC.
+    - max-activating example grids per SAE feature — now genuinely
+      patch-level: use `img_idx`/`pos_idx` in the cached token data plus
+      the exact 10×10px / 4px-stride receptive-field geometry to crop
+      and display the actual image region each firing token corresponds
+      to, rather than the whole digit
+    - gradient-based activation maximization in pixel space
+    - feature-class selectivity / purity scoring — remember token
+      labels are per-image proxies, so cross-check any position-level
+      purity claim against a handful of cropped examples
+    - reconstruction substitution (fraction of classifier accuracy
+      recovered when swapping in the SAE reconstruction of each token,
+      re-pooling, and reclassifying)
+    - single ablation/amplification of a candidate feature
+    - projecting SAE decoder directions onto `fc_out`'s weights directly
+      — no extra care needed for the avg-pool step, since pooling and
+      the readout are both linear and commute, so per-position causal
+      relevance is exact, not approximate. This is the same
+      causally-privileged-subspace question this testbed exists to
+      prototype before trying it on ESMC.
 
-        If you want a **dictionary-size / sparsity sweep** across multiple
-        `(dict_mult, l1_coeff)` or `(dict_mult, k)` combinations rather than
-        one run at a time, that's a natural extension of the Phase 2 cells
-        above — happy to add a sweep grid + comparison plot on request.
-        """
-    )
+    If you want a **dictionary-size / sparsity sweep** across multiple
+    `(dict_mult, l1_coeff)` or `(dict_mult, k)` combinations rather than
+    one run at a time, that's a natural extension of the Phase 2 cells
+    above — happy to add a sweep grid + comparison plot on request.
+    """)
     return
 
+
+if __name__ == "__main__":
+    app.run()
