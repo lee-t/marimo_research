@@ -1,0 +1,494 @@
+/* ── figure4_widget.css ─────────────────────────────────────────────
+   Dark-mode-first styling for SAE Feature Neighborhood Explorer.
+   Inspired by Biohub ESM Atlas + eliebak J-Space Open.
+   ────────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── reset inside widget ── */
+.fn-root *, .fn-root *::before, .fn-root *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── container ── */
+.fn-root {
+  --bg: #0f1114;
+  --bg-card: #181b20;
+  --bg-card-hover: #1e2228;
+  --bg-tooltip: #1a1d24;
+  --border: #2a2e36;
+  --border-active: #7c8aff;
+  --text-primary: #e8eaed;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent: #7c8aff;
+  --accent-dim: #4f5bbd;
+  --anchor-color: #f59e0b;
+  --dim-13: #60a5fa;
+  --dim-14: #f59e0b;
+  --dim-16: #34d399;
+  --cat-catalytic: #ef4444;
+  --cat-structural: #22c55e;
+  --cat-domain: #f97316;
+  --cat-tertiary: #a855f7;
+  --cat-biochem: #eab308;
+  --cat-localization: #06b6d4;
+  --cat-default: #6b7280;
+  --font-sans: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text-primary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  grid-template-rows: auto 1fr;
+  min-height: 640px;
+  max-height: 820px;
+  width: 100%;
+}
+
+/* ── header bar ── */
+.fn-header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.fn-header-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.fn-header-title span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.fn-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.fn-chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.fn-chip:hover {
+  border-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
+.fn-chip.active {
+  border-color: var(--border-active);
+  color: var(--text-primary);
+  background: rgba(124, 138, 255, 0.1);
+}
+
+.fn-chip .chip-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.fn-stats-bar {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.fn-stats-bar strong {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ── left panel: scatter ── */
+.fn-scatter-panel {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+}
+
+.fn-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+/* ── tooltip ── */
+.fn-tooltip {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  background: var(--bg-tooltip);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  max-width: 280px;
+  backdrop-filter: blur(8px);
+}
+
+.fn-tooltip.visible {
+  opacity: 1;
+}
+
+.fn-tooltip-id {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.fn-tooltip-dim {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
+
+.fn-tooltip-label {
+  color: var(--text-primary);
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.fn-tooltip-cosine {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.fn-tooltip-cosine strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ── legend ── */
+.fn-legend {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  background: rgba(15, 17, 20, 0.85);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  backdrop-filter: blur(4px);
+}
+
+.fn-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fn-legend-dot {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ── colorbar ── */
+.fn-colorbar {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  background: rgba(15, 17, 20, 0.85);
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  backdrop-filter: blur(4px);
+}
+
+.fn-colorbar-gradient {
+  width: 80px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+/* ── right panel: detail ── */
+.fn-detail-panel {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: var(--bg-card);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.fn-detail-panel::-webkit-scrollbar {
+  width: 5px;
+}
+.fn-detail-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.fn-detail-panel::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.fn-detail-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 10px;
+}
+
+.fn-detail-empty-icon {
+  font-size: 32px;
+  opacity: 0.4;
+}
+
+/* ── detail header ── */
+.fn-detail-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fn-detail-fid {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.fn-detail-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.fn-detail-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.fn-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fn-badge-dim {
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
+
+.fn-badge-category {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* ── detail body ── */
+.fn-detail-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fn-detail-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.fn-detail-description {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+/* ── metric row ── */
+.fn-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.fn-metric {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.fn-metric-value {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.fn-metric-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 3px;
+}
+
+/* ── activation bar ── */
+.fn-activation-bar-container {
+  width: 100%;
+}
+
+.fn-activation-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.fn-activation-bar canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ── neighbor list ── */
+.fn-neighbor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fn-neighbor-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.fn-neighbor-row:hover {
+  background: var(--bg-card-hover);
+}
+
+.fn-neighbor-row.selected {
+  background: rgba(124, 138, 255, 0.12);
+  border-left: 2px solid var(--accent);
+}
+
+.fn-neighbor-fid {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--text-primary);
+  min-width: 50px;
+}
+
+.fn-neighbor-label {
+  flex: 1;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+}
+
+.fn-neighbor-cosine {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 500;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* ── light mode overrides ── */
+@media (prefers-color-scheme: light) {
+  .fn-root {
+    --bg: #f8f9fb;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f3f5;
+    --bg-tooltip: #ffffff;
+    --border: #e0e3e8;
+    --border-active: #5b6abf;
+    --text-primary: #1a1d24;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    --accent: #5b6abf;
+    --accent-dim: #8991d4;
+  }
+
+  .fn-tooltip {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .fn-legend, .fn-colorbar {
+    background: rgba(248, 249, 251, 0.9);
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAE Decoder Neighborhood Explorer</title>
+  <link rel="stylesheet" href="figure4_widget.css">
+  <style>
+    body {
+      background: #090a0f;
+      color: #e8eaed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 40px 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .app-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+      background: linear-gradient(135deg, #a5b4fc, #818cf8, #6366f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+
+    .app-desc {
+      font-size: 14px;
+      color: #9ca3af;
+      max-width: 600px;
+      line-height: 1.5;
+      margin: 0 0 10px 0;
+    }
+
+    /* Embedded anywidget host container */
+    #widget-host {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Live state debugger card */
+    .debugger-card {
+      background: #181b20;
+      border: 1px solid #2a2e36;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .debugger-header {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin-bottom: 8px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .debugger-header::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #34d399;
+      border-radius: 50%;
+    }
+
+    .debugger-value {
+      color: #7c8aff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div>
+    <h1 class="app-title">ESMC Sparse Autoencoder (SAE)</h1>
+    <p class="app-desc">Interactive Figure 4D Feature Neighborhood prototype. Shows the UMAP neighborhood around <strong>F6716</strong> (Serine hydrolase nucleophile elbow) across three codebook sizes ($2^{13}$, $2^{14}$, $2^{16}$). Click any point to view feature detail.</p>
+  </div>
+
+  <!-- anywidget will mount here -->
+  <div id="widget-host"></div>
+
+  <!-- Mock Python State Monitor -->
+  <div class="debugger-card">
+    <div class="debugger-header">Mock Python Synced State (anywidget model sync)</div>
+    <div>selected_feature: <span id="synced-feature" class="debugger-value">F6716</span></div>
+  </div>
+</div>
+
+<script type="module">
+  import widget from './figure4_widget.js';
+
+  async function init() {
+    console.log("Loading dataset...");
+    const res = await fetch('./figure4_data.json');
+    const data = await res.json();
+
+    const host = document.getElementById('widget-host');
+    const syncText = document.getElementById('synced-feature');
+
+    // Current state values
+    let selectedFeature = "F6716";
+    const eventListeners = {};
+
+    // Mock anywidget Model API
+    const model = {
+      get(name) {
+        if (name === "neighbor_data") {
+          return JSON.stringify(data.neighbor_rows);
+        }
+        if (name === "anchor_label") {
+          return data.anchor_metadata.label || "F6716 Neighborhood";
+        }
+        if (name === "selected_feature") {
+          return selectedFeature;
+        }
+        return null;
+      },
+      set(name, value) {
+        if (name === "selected_feature") {
+          selectedFeature = value;
+          syncText.textContent = value;
+          // Trigger listeners
+          if (eventListeners["change:selected_feature"]) {
+            eventListeners["change:selected_feature"].forEach(cb => cb());
+          }
+        }
+      },
+      save_changes() {
+        console.log("changes saved to mock python backend");
+      },
+      on(event, callback) {
+        if (!eventListeners[event]) {
+          eventListeners[event] = [];
+        }
+        eventListeners[event].push(callback);
+      }
+    };
+
+    console.log("Rendering anywidget...");
+    widget.render({ model, el: host });
+  }
+
+  init().catch(err => {
+    console.error("Initialization failed:", err);
+    document.getElementById('widget-host').innerHTML = `
+      <div style="padding: 40px; text-align: center; color: #ef4444; font-family: monospace;">
+        <h3>Failed to load dataset</h3>
+        <p>${err.message}</p>
+        <p style="font-size: 12px; color: #9ca3af; margin-top: 10px;">Make sure to run a local web server (e.g. <code>python -m http.server</code>) to bypass browser CORS restrictions when fetching JSON.</p>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>
