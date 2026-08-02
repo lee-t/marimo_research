@@ -10,7 +10,7 @@
 import marimo
 
 __generated_with = "0.20.4"
-app = marimo.App(width="wide")
+app = marimo.App(width="full")
 
 
 @app.cell(hide_code=True)
@@ -139,129 +139,227 @@ def _(fig_sel, FIGURES):
 
 @app.cell(hide_code=True)
 def _(mo, D):
-    def build_controls(key):
-        """Construct the interactive widgets for a figure page.
+    lens_compare_panels = D["lens_compare"]["panels"]
+    lens_compare_panel = mo.ui.dropdown(
+        options={p["title"]: i for i, p in enumerate(lens_compare_panels)},
+        value=lens_compare_panels[0]["title"],
+        label="Prompt",
+    )
+    lens_compare_lens = mo.ui.radio(
+        options=["jacobian", "logit", "tuned"], value="jacobian", label="Lens", inline=True
+    )
+    lens_compare_layers = [r["layer"] for r in lens_compare_panels[0]["rows"]]
+    lens_compare_layer_options = {
+        f"layer index {l} (≈ L{round(l / 24 * 100)})": l for l in lens_compare_layers
+    }
+    lens_compare_layer = mo.ui.dropdown(
+        options=lens_compare_layer_options,
+        value=next(k for k, v in lens_compare_layer_options.items() if v == 13),
+        label="Readout at layer",
+    )
+    lens_compare_pos = mo.ui.slider(start=0, stop=56, step=1, value=9, label="Token position")
 
-        Kept as a callable so the script-mode smoke test can instantiate every
-        page's controls (validating their defaults), not just the default page.
-        """
-        w = {}
+    modulation_panels = D["modulation_readout"]["panels"]
+    modulation_panel = mo.ui.dropdown(
+        options={p["title"]: i for i, p in enumerate(modulation_panels)},
+        value=modulation_panels[0]["title"],
+        label="Mental task",
+    )
+    modulation_layers = [l["layer"] for l in modulation_panels[0]["layers"]]
+    modulation_layer_options = {
+        f"layer index {l} (≈ L{round(l / 24 * 100)})": l for l in modulation_layers
+    }
+    modulation_layer = mo.ui.dropdown(
+        options=modulation_layer_options,
+        value=next(k for k, v in modulation_layer_options.items() if v == 13),
+        label="Readout at layer",
+    )
+    modulation_pos = mo.ui.slider(
+        start=0, stop=47, step=1, value=modulation_panels[0]["key_pos"], label="Token position"
+    )
 
-        if key == "lens_compare":
-            panels = D["lens_compare"]["panels"]
-            w["panel"] = mo.ui.dropdown(
-                options={p["title"]: i for i, p in enumerate(panels)},
-                value=panels[0]["title"],
-                label="Prompt",
-            )
-            w["lens"] = mo.ui.radio(
-                options=["jacobian", "logit", "tuned"], value="jacobian", label="Lens", inline=True
-            )
-            layers = [r["layer"] for r in panels[0]["rows"]]
-            layer_opts = {f"layer index {l} (≈ L{round(l / 24 * 100)})": l for l in layers}
-            w["layer"] = mo.ui.dropdown(
-                options=layer_opts,
-                value=[k for k, v in layer_opts.items() if v == 13][0],
-                label="Readout at layer",
-            )
-            w["pos"] = mo.ui.slider(start=0, stop=56, step=1, value=9, label="Token position")
-        elif key == "modulation_readout":
-            panels = D["modulation_readout"]["panels"]
-            w["panel"] = mo.ui.dropdown(
-                options={p["title"]: i for i, p in enumerate(panels)},
-                value=panels[0]["title"],
-                label="Mental task",
-            )
-            layers = [l["layer"] for l in panels[0]["layers"]]
-            layer_opts = {f"layer index {l} (≈ L{round(l / 24 * 100)})": l for l in layers}
-            w["layer"] = mo.ui.dropdown(
-                options=layer_opts,
-                value=[k for k, v in layer_opts.items() if v == 13][0],
-                label="Readout at layer",
-            )
-            w["pos"] = mo.ui.slider(start=0, stop=47, step=1, value=panels[0]["key_pos"],
-                                    label="Token position")
-        elif key == "swap_explorer":
-            options = {}
-            for i, p in enumerate(D["latent_patching"]["panels"]):
-                options[f"reasoning — {p['title']}"] = ("latent_patching", i)
-            for i, p in enumerate(D["flex_gen_example"]["panels"]):
-                options[f"generalization — {p['title']} (France→China)"] = ("flex_gen_example", i)
-            w["panel"] = mo.ui.dropdown(options=options, value=next(iter(options)),
-                                        label="Swap trial")
-        elif key == "selectivity_language":
-            cols = D["selectivity_language"]["polished_ex"]["cols"]
-            w["col"] = mo.ui.dropdown(
-                options={c["title"]: i for i, c in enumerate(cols)}, value=cols[2]["title"],
-                label="Task variant",
-            )
-        elif key == "selectivity_linecount":
-            d = D["selectivity_linecount"]
-            cond_opts = {d["condLabel"][c].replace("\n", " "): c for c in d["conds"]}
-            w["cond"] = mo.ui.dropdown(
-                options=cond_opts,
-                value=[k for k, v in cond_opts.items() if v == "direct"][0],
-                label="Task variant",
-            )
-        elif key == "ablation_examples":
-            ex = D["ablation_examples"]
-            ex_opts = {f"{i + 1}. {e['title']}": i for i, e in enumerate(ex)}
-            w["example"] = mo.ui.dropdown(
-                options=ex_opts, value=next(iter(ex_opts)), label="Example"
-            )
-        elif key == "selfreport":
-            ex = D["selfreport"]["excerpts"]["soc"]
-            w["excerpt"] = mo.ui.dropdown(
-                options={f"Prompt {i + 1}": i for i in range(len(ex))},
-                value="Prompt 1",
-                label="Transcript excerpt",
-            )
-        elif key == "misalign_lens":
-            panels = D["misalign_lens"]["panels"]
-            w["panel"] = mo.ui.dropdown(
-                options={p["title"]: i for i, p in enumerate(panels)},
-                value=panels[0]["title"],
-                label="Readout position",
-            )
-        elif key == "rm_bias":
-            w["example"] = mo.ui.dropdown(
-                options=["neutral", "quirk_eliciting", "goal_probing"], value="goal_probing",
-                label="Prompt set",
-            )
-        elif key == "roleplay":
-            w["panel"] = mo.ui.dropdown(
-                options=["disclaimer", "fictional", "roleplay"], value="fictional",
-                label="Workspace word",
-            )
-        elif key == "pref_violation":
-            panels = D["pref_violation_lens"]["panels"]
-            pref_opts = {p["label"]: p["key"] for p in panels}
-            w["panel"] = mo.ui.dropdown(
-                options=pref_opts, value=panels[0]["label"], label="Word family"
-            )
+    swap_options = {
+        f"reasoning — {p['title']}": ("latent_patching", i)
+        for i, p in enumerate(D["latent_patching"]["panels"])
+    }
+    swap_options.update(
+        {
+            f"generalization — {p['title']} (France→China)": ("flex_gen_example", i)
+            for i, p in enumerate(D["flex_gen_example"]["panels"])
+        }
+    )
+    swap_panel = mo.ui.dropdown(
+        options=swap_options,
+        value=next(iter(swap_options)),
+        label="Swap trial",
+    )
 
-        return w
+    selectivity_cols = D["selectivity_language"]["polished_ex"]["cols"]
+    selectivity_language_col = mo.ui.dropdown(
+        options={c["title"]: i for i, c in enumerate(selectivity_cols)},
+        value=selectivity_cols[2]["title"],
+        label="Task variant",
+    )
 
-    return (build_controls,)
+    selectivity_linecount = D["selectivity_linecount"]
+    selectivity_linecount_options = {
+        selectivity_linecount["condLabel"][c].replace("\n", " "): c
+        for c in selectivity_linecount["conds"]
+    }
+    selectivity_linecount_cond = mo.ui.dropdown(
+        options=selectivity_linecount_options,
+        value=next(k for k, v in selectivity_linecount_options.items() if v == "direct"),
+        label="Task variant",
+    )
+
+    ablation_examples = D["ablation_examples"]
+    ablation_example_options = {
+        f"{i + 1}. {e['title']}": i for i, e in enumerate(ablation_examples)
+    }
+    ablation_example = mo.ui.dropdown(
+        options=ablation_example_options,
+        value=next(iter(ablation_example_options)),
+        label="Example",
+    )
+
+    selfreport_excerpt = mo.ui.dropdown(
+        options={f"Prompt {i + 1}": i for i in range(len(D["selfreport"]["excerpts"]["soc"]))},
+        value="Prompt 1",
+        label="Transcript excerpt",
+    )
+
+    misalign_panels = D["misalign_lens"]["panels"]
+    misalign_lens_panel = mo.ui.dropdown(
+        options={p["title"]: i for i, p in enumerate(misalign_panels)},
+        value=misalign_panels[0]["title"],
+        label="Readout position",
+    )
+
+    rm_bias_example = mo.ui.dropdown(
+        options=["neutral", "quirk_eliciting", "goal_probing"],
+        value="goal_probing",
+        label="Prompt set",
+    )
+    roleplay_panel = mo.ui.dropdown(
+        options=["disclaimer", "fictional", "roleplay"],
+        value="fictional",
+        label="Workspace word",
+    )
+
+    pref_violation_panels = D["pref_violation_lens"]["panels"]
+    pref_violation_options = {p["label"]: p["key"] for p in pref_violation_panels}
+    pref_violation_panel = mo.ui.dropdown(
+        options=pref_violation_options,
+        value=pref_violation_panels[0]["label"],
+        label="Word family",
+    )
+
+    figure_widgets = {
+        "lens_compare": (
+            lens_compare_panel,
+            lens_compare_lens,
+            lens_compare_layer,
+            lens_compare_pos,
+        ),
+        "modulation_readout": (
+            modulation_panel,
+            modulation_layer,
+            modulation_pos,
+        ),
+        "swap_explorer": (swap_panel,),
+        "selectivity_language": (selectivity_language_col,),
+        "selectivity_linecount": (selectivity_linecount_cond,),
+        "ablation_examples": (ablation_example,),
+        "selfreport": (selfreport_excerpt,),
+        "misalign_lens": (misalign_lens_panel,),
+        "rm_bias": (rm_bias_example,),
+        "roleplay": (roleplay_panel,),
+        "pref_violation": (pref_violation_panel,),
+    }
+
+    return (
+        ablation_example,
+        figure_widgets,
+        lens_compare_layer,
+        lens_compare_lens,
+        lens_compare_panel,
+        lens_compare_pos,
+        misalign_lens_panel,
+        modulation_layer,
+        modulation_panel,
+        modulation_pos,
+        pref_violation_panel,
+        rm_bias_example,
+        roleplay_panel,
+        selectivity_language_col,
+        selectivity_linecount_cond,
+        selfreport_excerpt,
+        swap_panel,
+    )
 
 
 @app.cell(hide_code=True)
-def _(build_controls, fig_meta):
-    # Per-figure interactive controls, rebuilt whenever the figure changes.
-    w = build_controls(fig_meta["key"])
-    return (w,)
-
-
-@app.cell(hide_code=True)
-def _(w):
-    ctrl = {k: v.value for k, v in w.items()}
+def _(
+    ablation_example,
+    fig_meta,
+    lens_compare_layer,
+    lens_compare_lens,
+    lens_compare_panel,
+    lens_compare_pos,
+    misalign_lens_panel,
+    modulation_layer,
+    modulation_panel,
+    modulation_pos,
+    pref_violation_panel,
+    rm_bias_example,
+    roleplay_panel,
+    selectivity_language_col,
+    selectivity_linecount_cond,
+    selfreport_excerpt,
+    swap_panel,
+):
+    key = fig_meta["key"]
+    if key == "lens_compare":
+        ctrl = {
+            "panel": lens_compare_panel.value,
+            "lens": lens_compare_lens.value,
+            "layer": lens_compare_layer.value,
+            "pos": lens_compare_pos.value,
+        }
+    elif key == "modulation_readout":
+        ctrl = {
+            "panel": modulation_panel.value,
+            "layer": modulation_layer.value,
+            "pos": modulation_pos.value,
+        }
+    elif key == "swap_explorer":
+        ctrl = {"panel": swap_panel.value}
+    elif key == "selectivity_language":
+        ctrl = {"col": selectivity_language_col.value}
+    elif key == "selectivity_linecount":
+        ctrl = {"cond": selectivity_linecount_cond.value}
+    elif key == "ablation_examples":
+        ctrl = {"example": ablation_example.value}
+    elif key == "selfreport":
+        ctrl = {"excerpt": selfreport_excerpt.value}
+    elif key == "misalign_lens":
+        ctrl = {"panel": misalign_lens_panel.value}
+    elif key == "rm_bias":
+        ctrl = {"example": rm_bias_example.value}
+    elif key == "roleplay":
+        ctrl = {"panel": roleplay_panel.value}
+    elif key == "pref_violation":
+        ctrl = {"panel": pref_violation_panel.value}
+    else:
+        ctrl = {}
     return (ctrl,)
 
 
 @app.cell(hide_code=True)
-def _(mo, D, RENDERERS, ctrl, fig_meta, w):
+def _(mo, D, RENDERERS, ctrl, fig_meta, figure_widgets):
     fig_obj = RENDERERS[fig_meta["key"]](D, ctrl)
-    ctrl_col = mo.vstack(w.values(), gap=0.4) if w else None
+    page_widgets = figure_widgets.get(fig_meta["key"], ())
+    ctrl_col = mo.vstack(list(page_widgets), gap=0.4) if page_widgets else None
     body = (
         mo.hstack([ctrl_col, fig_obj], widths=[1, 3], gap=2, align="start")
         if ctrl_col is not None
@@ -2304,7 +2402,7 @@ def _(mo):
 
 
 @app.cell(hide_code=True)
-def _(D, FIGURES, RENDERERS, build_controls, is_script_mode, plt):
+def _(D, FIGURES, RENDERERS, figure_widgets, is_script_mode, plt):
     # Headless smoke test: in script mode, render every figure page once with
     # default controls so `uv run` surfaces renderer errors anywhere in the notebook.
     default_ctrl = {
@@ -2343,6 +2441,10 @@ def _(D, FIGURES, RENDERERS, build_controls, is_script_mode, plt):
     }
     smoke_summary = []
     if is_script_mode:
+        # Touch every interactive widget group so invalid defaults surface in script mode too.
+        for _page_widgets in figure_widgets.values():
+            tuple(_page_widgets)
+
         # extra coverage of interactive branches
         extra = [
             ("lens_compare", {"panel": 1, "lens": "logit", "layer": 24, "pos": 3}),
@@ -2360,7 +2462,6 @@ def _(D, FIGURES, RENDERERS, build_controls, is_script_mode, plt):
             ("pref_violation", {"panel": "conflict"}),
         ]
         for f in FIGURES:
-            build_controls(f["key"])  # validate every page's widget defaults
             smoke_summary.append((f["key"], RENDERERS[f["key"]](D, default_ctrl[f["key"]])))
             plt.close("all")
         for skey, cextra in extra:
